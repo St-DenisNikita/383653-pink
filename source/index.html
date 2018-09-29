@@ -108,54 +108,40 @@
           <section class="price">
             <h2 class="visually-hidden">Цены</h2>
             <div class="price__slider">
-              <section class="price__briefcase briefcase">
-                <img class="price-hit" src="https://via.placeholder.com/70x75" width="70" height="75" alt="Хит продаж">
-                <h1 class="briefcase__name">Стандарт</h1>
-                <aside class="briefcase__price">3,99 USD</aside>
-                <ul class="briefcase__options">
-                  <li class="briefcase__item">
-                    <p class="briefcase__option">Розовый фильтр</p>
-                  </li>
-                  <li class="briefcase__item">
-                    <p class="briefcase__option">Смайлики</p>
-                  </li>
-                  <li class="briefcase__item">
-                    <p class="briefcase__option">Комментарии</p>
-                  </li>
-                </ul>
-              </section>
-              <section class="price__briefcase briefcase">
-                <img class="price-hit" src="https://via.placeholder.com/70x75" width="70" height="75" alt="Хит продаж">
-                <h1 class="briefcase__name">Стандарт</h1>
-                <aside class="briefcase__price">3,99 USD</aside>
-                <ul class="briefcase__options">
-                  <li class="briefcase__item">
-                    <p class="briefcase__option briefcase__option--yes">Розовый фильтр</p>
-                  </li>
-                  <li class="briefcase__item">
-                    <p class="briefcase__option briefcase__option--yes">Смайлики</p>
-                  </li>
-                  <li class="briefcase__item">
-                    <p class="briefcase__option briefcase__option--not">Комментарии</p>
-                  </li>
-                </ul>
-              </section>
-              <section class="price__briefcase briefcase">
-                <img class="price-hit" src="https://via.placeholder.com/70x75" width="70" height="75" alt="Хит продаж">
-                <h1 class="briefcase__name">Стандарт</h1>
-                <aside class="briefcase__price">3,99 USD</aside>
-                <ul class="briefcase__options">
-                  <li class="briefcase__item">
-                    <p class="briefcase__option">Розовый фильтр</p>
-                  </li>
-                  <li class="briefcase__item">
-                    <p class="briefcase__option">Смайлики</p>
-                  </li>
-                  <li class="briefcase__item">
-                    <p class="briefcase__option">Комментарии</p>
-                  </li>
-                </ul>
-              </section>
+              <table class="price__briefcases briefcase">
+                <tr>
+                  <th class="visually-hidden"></th>
+                  <th class="briefcase__name">lorem ipsum
+                    <span class="briefcase__price">lorem ipsum</span>
+                  </th>
+                  <th class="briefcase__name">
+                    <img class="price-hit" src="https://via.placeholder.com/70x75" width="70" height="75" alt="Хит продаж">
+                    Стандарт
+                    <span class="briefcase__price">3,99 USD</span>
+                  </th>
+                  <th class="briefcase__name">lorem ipsum
+                    <span class="briefcase__price">lorem ipsum</span>
+                  </th>
+                </tr>
+                <tr>
+                  <td class="briefcase__option">Розовый фильтр</td>
+                  <td class="briefcase__option">lorem ipsum</td>
+                  <td class="briefcase__option briefcase__option--yes">Да</td>
+                  <td class="briefcase__option">lorem ipsum</td>
+                </tr>
+                <tr>
+                  <td class="briefcase__option">Смайлики</td>
+                  <td class="briefcase__option">lorem ipsum</td>
+                  <td class="briefcase__option briefcase__option--yes">Да</td>
+                  <td class="briefcase__option">lorem ipsum</td>
+                </tr>
+                <tr>
+                  <td class="briefcase__option">Комментарии</td>
+                  <td class="briefcase__option">lorem ipsum</td>
+                  <td class="briefcase__option briefcase__option--not">Нет</td>
+                  <td class="briefcase__option">lorem ipsum</td>
+                </tr>
+              </table>
               <div class="price__toggles">
                 <button class="price__toggle" type="button">1</button>
                 <button class="price__toggle" type="button">2</button>
@@ -181,7 +167,7 @@
             </div>
           </section>
           <section class="map">
-            <iframe src="https://yandex.ru/map-widget/v1/-/CBBfqEAtoD" width="320" height="612" frameborder="0" allowfullscreen="true"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CBBfqEAtoD" width="320" height="612"></iframe>
           </section>
         </main>
         <footer class="page-footer visually-hidden">
