@@ -12,11 +12,12 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list main-menu">
-          <li class="main-menu__item main-menu__item--active">
+          <button class="main-nav__trigger trigger" type="button" title="Главное меню"></button>
+          <li class="main-menu__item">
             <a class="main-menu__link" href="index.html">Главная</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Фотографии</a>
+            <a class="main-menu__link main-menu__item--active" href="#">Фотографии</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="form.html">Конкурс</a>
@@ -25,7 +26,6 @@
             <a class="main-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
-        <button class="main-nav__trigger" type="button" title="Главное меню"></button>
       </nav>
     </header>
     <main class="page-main">
@@ -186,8 +186,8 @@
             </div>
           </div>
         </div>
-        <button class="upload__button upload__button--post" type="button">Запостить</button>
-        <button class="upload__button upload__button--cancel" type="button">Отмена</button>
+        <button class="upload__button upload__button--post button-upload" type="button">Запостить</button>
+        <button class="upload__button upload__button--cancel button-upload" type="button">Отмена</button>
       </section>
     </main>
     <footer class="page-footer">
@@ -197,13 +197,13 @@
       <div class="page-footer-social social">
         <ul class="social-links">
           <li class="social-links__item">
-            <a class="social-links__link social-links__link--twitter" href=""></a>
+            <a class="social-links__link social-links__link--twitter" href="">Twitter</a>
           </li>
           <li class="social-links__item">
-            <a class="social-links__link social-links__link--facebook" href=""></a>
+            <a class="social-links__link social-links__link--facebook" href="">Facebook</a>
           </li>
           <li class="social-links__item">
-            <a class="social-links__link social-links__link--youtube" href=""></a>
+            <a class="social-links__link social-links__link--youtube" href="">Youtube</a>
           </li>
         </ul>
       </div>
