@@ -1,5 +1,22 @@
 .briefcase__title {
   background-color: @color-main;
+
+  &--img {
+    position: relative;
+  }
+
+  &--img::before {
+    .pseudoelements();
+    left: 0;
+    top: 0;
+
+    height: 73px;
+    width: 70px;
+
+    background-image: url("../../img/bg-hit.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .briefcase__name {
