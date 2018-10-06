@@ -1,30 +1,14 @@
-body {
-  margin: 0;
-  padding: 0;
-
-  color: @color-black;
-
-  background-color: lightgreen;
-}
-
-.visually-hidden {
-  position: absolute;
-
-  border: 0;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  width: 1px;
-
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+@import "normalize.less";
 
 @import "variables.less";
 
 @import "mixins.less";
 
+@import "global.less";
+
 @import "page-header.less";
+
+@import "btn.less";
 
 @import "main-nav.less";
 
@@ -60,10 +44,6 @@ body {
 
 @import "popup.less";
 
-@import "button-popup.less";
-
-@import "button-form.less";
-
 @import "photos.less";
 
 @import "photo.less";
@@ -71,8 +51,6 @@ body {
 @import "comment.less";
 
 @import "upload.less";
-
-@import "button-upload.less";
 
 @import "page-footer.less";
 
