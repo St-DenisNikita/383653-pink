@@ -1,0 +1,101 @@
+.btn {
+  font-size: 18px;
+  font-weight: 700;
+
+  &--form,
+  &--popup {
+    border: none;
+
+    color: @color-white;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    background-color: rgb(42, 171, 109);
+  }
+
+  &--cancel,
+  &--post,
+  &--download-app {
+    line-height: 18px;
+  }
+
+  &--form:hover,
+  &--popup:hover {
+    background-color: rgb(28, 155, 94);
+  }
+
+  &--form:active,
+  &--popup:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--form:disabled {
+    color: @color-white;
+
+    background-color: rgb(229, 229, 229);
+  }
+
+  &--cancel,
+  &--post {
+    border-style: solid;
+    border-width: 3px;
+
+    background-color: rgb(242, 242, 242);
+  }
+
+  &--post {
+    border-color: @color-fuchsia;
+
+    color: @color-fuchsia;
+  }
+
+  &--post:hover,
+  &--post:active {
+    background-color: @color-fuchsia;
+  }
+
+  &--post:hover {
+    color: @color-white;
+  }
+
+  &--post:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--cancel {
+    border-color: rgba(40, 54, 69, 0.1);
+
+    color: rgba(40, 54, 69, 0.1);
+  }
+
+  &--cancel:hover {
+    border-color: rgba(40, 54, 69, 0.3);
+
+    color: rgba(40, 54, 69, 0.3);
+  }
+
+  &--cancel:active {
+    border-color: rgba(40, 54, 69, 0);
+
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: rgba(40, 54, 69, 0.3);
+  }
+
+  &--download-app {
+    border: 3px solid @color-white;
+
+    color: @color-white;
+    text-decoration: none;
+  }
+
+  &--download-app:hover {
+    color: @color-fuchsia;
+
+    background-color: @color-white;
+  }
+
+  &--download-app:active {
+    color: rgba(@color-fuchsia, 0.3);
+  }
+}

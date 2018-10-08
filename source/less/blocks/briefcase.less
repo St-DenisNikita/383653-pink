@@ -1,0 +1,54 @@
+.briefcase__title {
+  background-color: @color-main;
+
+  &--img {
+    position: relative;
+  }
+
+  &--img::before {
+    .pseudoelements();
+    left: 0;
+    top: 0;
+
+    height: 73px;
+    width: 70px;
+
+    background-image: url("../img/bg-hit.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.briefcase__name {
+  margin: 0;
+
+  color: @color-white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 33px;
+  text-transform: uppercase;
+}
+
+.briefcase__price {
+  margin: 0;
+
+  color: @color-white;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+  text-transform: uppercase;
+}
+
+.briefcase__option-accessible {
+  background-color: @color-white;
+}
+
+.briefcase__option {
+  margin: 0;
+
+  color: @color-main;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
