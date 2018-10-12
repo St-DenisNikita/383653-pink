@@ -1,7 +1,31 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 20px;
+
   color: @color-main;
 
   background-color: @color-white;
+}
+
+@media (min-width: 660px) {
+  .contacts {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 0 20px;
+    width: 660px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts {
+    padding: 0 130px;
+    width: 1200px;
+  }
 }
 
 .contacts__lead {
@@ -9,4 +33,24 @@
 
   font-size: 24px;
   font-weight: 300;
+}
+
+@media (min-width: 660px) {
+  .contacts__lead {
+    width: 100%;
+  }
+}
+
+@media (min-width: 660px) {
+  .contacts__phone,
+  .contacts__email,
+  .contacts__adress {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts__email {
+    order: 1;
+  }
 }

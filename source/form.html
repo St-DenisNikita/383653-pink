@@ -7,11 +7,13 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-        </a>
-        <button class="main-nav__trigger trigger" type="button" title="Главное меню"></button>
+      <div class="container container--header">
+        <div class="page-header__top">
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+          </a>
+          <button class="main-nav__trigger trigger" type="button" title="Главное меню"></button>
+        </div>
         <nav class="main-nav">
           <ul class="main-nav__list main-menu">
             <li class="main-menu__item">
@@ -31,12 +33,12 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="container">
-        <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="container container--form">
         <section class="contest">
           <p class="contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
           <form class="contest__form form-contest" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="contest__fieldset">
+            <fieldset class="contest__fieldset contest__fieldset--name">
               <legend class="contest__legend visually-hidden">ФИО</legend>
               <ul class="contest__list">
                 <li class="contest__option">
@@ -82,8 +84,8 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="contest__fieldset">
-              <legend class="contest__legend visually-hidden">Ваши контакты</legend>
+            <fieldset class="contest__fieldset contest__fieldset--contacts">
+              <legend class="contest__legend visually-hidden">Контактная информация</legend>
               <ul class="contest__list">
                 <li class="contest__option">
                   <label class="contest__label" for="user-phohe">Номер телефона</label>
@@ -112,13 +114,14 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="contest__fieldset">
-              <legend class="contest__legend visually-hidden">Впечатления</legend>
-              <label for="user-impression" class="contest__label">Опишите свои эмоции</label>
+            <fieldset class="contest__fieldset contest__fieldset--review">
+              <legend class="contest__legend">Опишите свои эмоции</legend>
               <textarea class="contest__textarea" name="impression" id="user-impression" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
-            <button class="contest__btn btn btn--form" type="submit">Отправить форму</button>
-            <p class="contest__form-comment"><span>*</span> — обязательные поля</p>
+            <div class="contest__submit">
+              <button class="contest__btn btn btn--form" type="submit">Отправить форму</button>
+              <p class="contest__form-comment"><span>*</span> — обязательные поля</p>
+            </div>
           </form>
         </section>
       </div>
@@ -134,7 +137,7 @@
       </div>
     </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="container container--footer">
         <a class="page-footer__logo" href="#">
           <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
         </a>

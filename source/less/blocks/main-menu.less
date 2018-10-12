@@ -1,8 +1,29 @@
 .main-menu {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   /* Оформление */
   .ulstyle();
+}
+
+@media (min-width: 1200px) {
+  .main-menu {
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 620px;
+  }
+}
+
+.main-menu__item {
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .main-menu__item {
+    margin: 0 auto;
+  }
 }
 
 .main-menu__link {

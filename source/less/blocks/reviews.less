@@ -1,5 +1,22 @@
 .reviews {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 20px;
+
   color: @color-black;
 
   background-color: @color-white;
+}
+
+@media (min-width: 660px) {
+  .reviews {
+    width: 660px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews {
+    padding: 0 130px;
+    width: 1200px;
+  }
 }

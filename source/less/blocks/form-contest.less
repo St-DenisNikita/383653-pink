@@ -1,15 +1,104 @@
+.contest__form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  .contest__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .contest__list {
   .ulstyle();
 }
 
 .contest__fieldset {
   border: none;
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
+  width: 320px;
 
   &--checkbox,
   &--radio {
     background-color: rgb(242, 242, 242);
+  }
+}
+
+@media (min-width: 660px) {
+  .contest__fieldset {
+    border: 2px solid rgb(242, 242, 242);
+    padding: 0;
+    width: 620px;
+
+    background-color: @color-white;
+  }
+
+  .contest__fieldset--name {
+    border: none;
+  }
+
+  .contest__fieldset--radio {
+    order: 1;
+  }
+
+  .contest__fieldset--contacts {
+    order: 2;
+  }
+
+  .contest__fieldset--checkbox {
+    order: 3;
+  }
+
+  .contest__fieldset--review {
+    order: 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contest__fieldset {
+    width: 940px;
+  }
+
+  .contest__fieldset--radio,
+  .contest__fieldset--name {
+    width: 433px;
+  }
+
+  .contest__fieldset--name {
+    margin-right: auto;
+  }
+
+  .contest__fieldset--radio {
+    margin-left: auto;
+  }
+}
+
+.contest__submit {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 320px;
+}
+
+@media (min-width: 660px) {
+  .contest__submit {
+    flex-direction: row;
+    justify-content: space-between;
+    order: 5;
+
+    padding: 0;
+    width: 620px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contest__submit {
+    width: 940px;
   }
 }
 

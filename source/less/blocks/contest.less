@@ -3,13 +3,31 @@
 }
 
 .contest__text {
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 320px;
   margin: 0;
 
   color: @color-main;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+  text-align: center;
 }
+
+@media (min-width: 660px) {
+  .contest__text {
+    padding: 0;
+    width: 660px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contest__text {
+    width: auto;
+  }
+}
+
 
 .contest__form-comment {
   margin: 0;

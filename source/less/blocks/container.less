@@ -1,5 +1,159 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 320px;
+
+  outline: 1px solid red;
+}
+
+@media (min-width: 660px) {
+  .container {
+    width: 660px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.container--header {
+  width: 320px;
+}
+
+@media (min-width: 660px) {
+  .container--header {
+    width: 660px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container--header {
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 1200px;
+    padding: 0 130px;
+  }
+}
+
+.container--attachment {
+  justify-content: flex-end;
+
+  box-sizing: border-box;
+  min-height: 733px;
+
+  background-color: @color-main;
+  background-image: url("../img/iphone-hand-mobile@1x.png"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-position: 0 175px, top;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 660px) {
+  .container--attachment {
+    min-height: 729px;
+    width: 100%;
+
+    background-image: url("../img/iphone-hand-tablet@1x.png"),
+      url("../img/bg-back-tablet@1x.jpg");
+    background-position: right -20px bottom 0, top;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container--attachment {
+    padding: 0 130px;
+    min-height: 853px;
+
+    background-image: url("../img/iphone-hand-desktop@1x.png"),
+      url("../img/bg-back-desktop@1x.jpg");
+    background-position: right -90px bottom 0, top;
+  }
+}
+
+.container--photos {
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 320px;
+}
+
+@media (min-width: 660px) {
+  .container--photos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 660px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container--photos {
+    padding: 0 130px;
+    width: 1200px;
+  }
+}
+
+.container--upload {
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 320px;
+
+  background-color: rgb(242, 242, 242);
+}
+
+@media (min-width: 660px) {
+  .container--upload {
+    width: 660px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container--upload {
+    padding: 0 130px;
+    width: 1200px;
+
+    background-color: @color-white;
+  }
+}
+
+@media (min-width: 660px) {
+  .container--form {
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 660px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container--form {
+    box-sizing: border-box;
+    padding: 0 130px;
+    width: 1200px;
+  }
+}
+
+.container--footer {
+  padding: 0 20px;
+}
+
+@media (min-width: 660px) {
+  .container--footer {
+    width: 660px;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container--footer {
+    padding: 0 130px;
+    width: 1200px;
+  }
 }

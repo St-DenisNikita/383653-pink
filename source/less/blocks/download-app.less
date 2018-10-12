@@ -1,7 +1,27 @@
 .download-app {
-  color: @color-white;
+  display: flex;
+  flex-direction: column;
 
-  background-color: @color-main;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 320px;
+
+  color: @color-white;
+}
+
+@media (min-width: 660px) {
+  .download-app {
+    margin: 0;
+    width: 340px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .download-app {
+    padding: 0;
+    width: 370px;
+  }
 }
 
 .download-app__support-devices {
@@ -10,4 +30,5 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
+  text-align: center;
 }

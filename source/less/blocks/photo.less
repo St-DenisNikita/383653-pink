@@ -1,5 +1,32 @@
 .photo {
-  background-color: rgb(242, 242, 242);
+  margin-bottom: 20px;
+  width: 280px;
+}
+
+@media (min-width: 660px) {
+  .photo {
+    width: 300px;
+  }
+}
+
+.photo--panorama {
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 0;
+  width: 320px;
+}
+
+@media (min-width: 660px) {
+  .photo--panorama {
+    margin-bottom: 50px;
+    width: 660px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo--panorama {
+    width: 1200px;
+  }
 }
 
 .photo__wrap {
@@ -27,12 +54,35 @@
   }
 }
 
+.photo__image-link {
+  line-height: 0;
+}
+
 .photo__image {
   display: block;
 }
 
 .photo__likes {
   position: relative;
+
+  background-color: rgb(242, 242, 242);
+}
+
+.photo__likes--panorama {
+  margin: 0 auto;
+  width: 280px;
+}
+
+@media (min-width: 660px) {
+  .photo__likes--panorama {
+    width: 620px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo__likes--panorama {
+    width: 940px;
+  }
 }
 
 .photo__quantity-likes {

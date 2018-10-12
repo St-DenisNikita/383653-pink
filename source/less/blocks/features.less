@@ -1,19 +1,106 @@
 .features {
+  box-sizing: border-box;
+  width: 320px;
+
+  display: flex;
+  flex-direction: column;
+
   background-color: @color-white;
 }
 
+@media (min-width: 660px) {
+  .features {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 660px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features {
+    width: 1200px;
+  }
+}
+
 .features__lead {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0 20px;
+  width: 320px;
 
   color: @color-main;
   font-size: 24px;
   font-weight: 300;
+  text-align: center;
+}
+
+@media (min-width: 660px) {
+  .features__lead {
+    width: 660px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__lead {
+    padding: 0 130px;
+    width: 1200px;
+  }
 }
 
 .features__functions {
   .ulstyle();
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  min-height: 753px;
+  padding: 0 20px;
 
   background-color: rgb(242, 242, 242);
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-position: center bottom -20px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 660px) {
+  .features__functions {
+    align-items: flex-end;
+    min-height: 482px;
+    width: 660px;
+
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-position: left 20px bottom;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__functions {
+    flex-direction: row;
+
+    padding: 0 130px;
+    width: 1200px;
+
+    background-image: url("../img/iphone-screen-1-desktop@1x.png"),
+      url("../img/iphone-screen-2-desktop@1x.png"),
+      url("../img/iphone-screen-3-desktop@1x.png");
+    background-position: left 130px top 10px,
+      left 435px top 10px,
+      left 735px top 10px;
+  }
+}
+
+@media (min-width: 660px) {
+  .features__item {
+    width: 320px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__item {
+    margin: 0 auto;
+    width: 250px;
+  }
 }
 
 .features__title {
@@ -31,8 +118,4 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-}
-
-.features__picture {
-  background-color: rgb(242, 242, 242);
 }

@@ -1,7 +1,27 @@
 .map {
+  position: relative;
+
+  min-height: 645px;
+  width: 100%;
+
   color: @color-main;
+  line-height: 0;
 
   background-color: @color-white;
+}
+
+.map-js {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
+  border: none;
+  width: 100%;
+}
+
+.map-inner {
+  margin: 0 auto;
+  width: 320px;
 }
 
 .map-image {
