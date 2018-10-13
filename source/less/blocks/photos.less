@@ -1,10 +1,13 @@
 .photos {
+  display: flex;
+  flex-direction: column;
+
   background-color: @color-white;
 }
 
 .photos__lead {
   margin: 0;
-  width: 280px;
+  padding: 0 20px;
 
   color: @color-main;
   font-size: 14px;
@@ -13,14 +16,23 @@
   text-align: center;
 }
 
-@media (min-width: 660px) {
-  .photos__lead {
-    width: 620px;
-  }
+.photos_users {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 20px;
 }
 
 @media (min-width: 660px) {
-  .photos__lead {
-    width: 940px;
+  .photos_users {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photos_users {
+    padding: 0 130px;
   }
 }

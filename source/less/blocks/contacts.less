@@ -3,7 +3,6 @@
   flex-direction: column;
 
   box-sizing: border-box;
-  width: 320px;
   padding: 0 20px;
 
   color: @color-main;
@@ -30,24 +29,22 @@
 
 .contacts__lead {
   margin: 0;
+  width: 100%;
 
   font-size: 24px;
   font-weight: 300;
+  text-align: center;
+
 }
 
-@media (min-width: 660px) {
-  .contacts__lead {
-    width: 100%;
-  }
-}
-
-@media (min-width: 660px) {
   .contacts__phone,
   .contacts__email,
   .contacts__adress {
+    display: flex;
+    flex-direction: column;
+
     margin: 0 auto;
   }
-}
 
 @media (min-width: 1200px) {
   .contacts__email {

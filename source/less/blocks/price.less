@@ -1,6 +1,6 @@
 .price {
   box-sizing: border-box;
-  width: 320px;
+  width: 100%;
 
   background-color: rgb(242, 242, 242);
 }
@@ -8,13 +8,17 @@
 @media (min-width: 660px) {
   .price {
     padding: 0 20px;
-    width: 660px;
   }
 }
 
 @media (min-width: 1200px) {
   .price {
     padding: 0 130px;
-    width: 1200px;
   }
 }
+
+.price__slider {
+  display: flex;
+  flex-direction: column;
+}
+

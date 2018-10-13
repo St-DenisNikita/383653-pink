@@ -1,6 +1,8 @@
 .upload {
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
+
   background-color: rgb(242, 242, 242);
 }
 
@@ -13,14 +15,33 @@
 
 @media (min-width: 1200px) {
   .upload {
-    padding-bottom: 57px;
+    padding: 0 130px;
+
+    background-color: @color-white;
+  }
+}
+
+.upload__example {
+  background-color: rgb(242, 242, 242);
+}
+
+@media (min-width: 1200px) {
+  .upload__example {
+    padding: 60px 0;
     padding-left: 80px;
-    padding-right: 60px;
-    padding-top: 57px;
+    padding-right: 30px;
   }
 }
 
 .upload__filters {
   display: flex;
   flex-direction: column;
+
+  background-color: rgb(242, 242, 242);
+}
+
+@media (min-width: 1200px) {
+  .upload__filters {
+    padding: 60px;
+  }
 }
