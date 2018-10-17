@@ -1,23 +1,11 @@
-.main-nav {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 2;
-}
-
 @media (min-width: 1200px) {
   .main-nav {
-    flex-direction: row;
-
-    padding: 0 130px;
-
-    background-color: rgba(@color-black, 0.3);
+    display: flex;
   }
 }
 
 .main-menu {
   display: none;
-  flex-direction: column;
   margin: 0;
   padding: 0;
   /* Оформление */
@@ -26,11 +14,10 @@
 
 @media (min-width: 1200px) {
   .main-menu {
+    align-items: center; //ну такое
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-
-    width: 100%;
+    flex-grow: 1;
   }
 }
 
@@ -60,9 +47,6 @@
 
 @media (min-width: 1200px) {
   .main-menu__link {
-    margin-bottom: 39px;
-    margin-top: 39px;
-
     text-transform: none;
   }
 }

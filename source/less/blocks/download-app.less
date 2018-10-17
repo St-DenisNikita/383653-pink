@@ -1,25 +1,43 @@
 .download-app {
-  display: flex;
-  flex-direction: column;
-
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 28px 20px;
+  margin-top: -66px;
+  padding-top: 176px;
 
   color: @color-white;
+
+  background-color: @color-main;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 660px) {
   .download-app {
-    margin: 0;
-    width: 340px;
+    margin-top: -110px;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 }
 
 @media (min-width: 1200px) {
   .download-app {
-    padding: 130px;
-    width: 560px;
+   background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+}
+
+@media (min-width: 660px) {
+  .download-app__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 660px) {
+  .download-app__attachment {
+    position: relative;
+    z-index: 1;
+    order: -1;
+
+    width: 300px;
   }
 }
 

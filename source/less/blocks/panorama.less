@@ -1,13 +1,24 @@
-.panorama {
-  width: 100%;
+.panorama__image {
+  margin: 0 auto;
+  max-width: 320px;
 }
 
-.panorama__comment {
-  padding: 0 20px;
+@media (min-width: 660px) {
+  .panorama__image {
+    max-width: 700px;
+  }
 }
 
 @media (min-width: 1200px) {
-  .panorama__comment {
-    padding: 0 130px;
+  .panorama__image {
+    max-width: 1200px;
   }
+}
+
+.panorama__link {
+  display: block;
+}
+
+.panorama__picture {
+  display: block;
 }

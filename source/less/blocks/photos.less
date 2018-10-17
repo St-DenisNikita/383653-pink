@@ -1,14 +1,8 @@
 .photos {
-  display: flex;
-  flex-direction: column;
-
   background-color: @color-white;
 }
 
 .photos__lead {
-  margin: 0;
-  padding: 0 20px;
-
   color: @color-main;
   font-size: 14px;
   font-weight: 400;
@@ -16,15 +10,10 @@
   text-align: center;
 }
 
-.photos_users {
-  display: flex;
-  flex-direction: column;
-
-  padding: 0 20px;
-}
-
 @media (min-width: 660px) {
   .photos_users {
+    display: flex;
+
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
