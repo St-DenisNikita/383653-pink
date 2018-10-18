@@ -6,19 +6,18 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0 20px;
-  padding-top: 38px;
+  padding-top: 31px;
   width: 100%;
 
   color: @color-main;
   font-size: 24px;
   font-weight: 300;
+  line-height: 28px;
   text-align: center;
 }
 
-@media (min-width: 1200px) {
-  .features__lead {
-    padding: 0 130px;
-  }
+.features__lead:first-child {
+  padding-top: 41px;
 }
 
 .features__wrap {
@@ -43,7 +42,7 @@
   margin-bottom: 0;
   margin-top: 0;
   padding: 0;
-  padding-top: 113px;
+  padding-top: 114px;
 
   list-style: none;
 }
@@ -105,6 +104,11 @@
   .features__function {
     text-align: left;
   }
+}
+
+.features__images {
+  padding-left: 2px;
+  padding-top: 10px;
 }
 
 @media (min-width: 1200px) {
