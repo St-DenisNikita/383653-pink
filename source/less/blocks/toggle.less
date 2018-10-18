@@ -1,0 +1,20 @@
+.toggles {
+  margin: 0 auto;
+  padding-top: 33px;
+  width: 62px;
+}
+
+.toggle {
+  border: 3px solid @color-white;
+  padding: 3px;
+
+  background-color: rgba(@color-main, 0.3);
+  border-radius: 50%;
+  vertical-align: middle;
+
+  &--active {
+    border: 3px solid @color-main;
+
+    background-color: rgba(@color-main, 0);
+  }
+}

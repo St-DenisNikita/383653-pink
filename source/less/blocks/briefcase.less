@@ -1,4 +1,19 @@
+.briefcase {
+  position: relative;
+  left: -258px;
+
+  border-width: 3px;
+}
+
+@media (min-width: 660px) {
+  .briefcase {
+    left: 0;
+  }
+}
+
 .briefcase__title {
+  padding-top: 14px;
+  padding-bottom: 18px;
   background-color: @color-main;
 
   &--img {
@@ -7,7 +22,7 @@
 
   &--img::before {
     .pseudoelements();
-    left: 0;
+    left: -2px;
     top: 0;
 
     height: 73px;
@@ -21,6 +36,7 @@
 
 .briefcase__name {
   margin: 0;
+  width: 274px;
 
   color: @color-white;
   font-size: 18px;

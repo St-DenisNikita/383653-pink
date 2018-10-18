@@ -2,13 +2,38 @@
   background-color: rgb(242, 242, 242);
 }
 
-.upload__lead {
-  margin: 0;
+@media (min-width: 660px) {
+  .upload {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
-  color: @color-main;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 30px;
+@media (min-width: 1200px) {
+  .upload {
+    background-color: @color-white;
+  }
+}
 
-  background-color: @color-white;
+.upload__example {
+  background-color: rgb(242, 242, 242);
+}
+
+@media (min-width: 1200px) {
+  .upload__example {
+    padding: 60px 0;
+    padding-left: 80px;
+    padding-right: 30px;
+  }
+}
+
+.upload__filters {
+  background-color: rgb(242, 242, 242);
+}
+
+@media (min-width: 1200px) {
+  .upload__filters {
+    padding: 60px;
+  }
 }

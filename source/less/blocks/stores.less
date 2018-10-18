@@ -1,14 +1,19 @@
 .stores {
   .ulstyle();
-}
 
-.stores__item {
-  padding: 30px; /*временно*/
+  display: flex;
+  justify-content: space-between;
+  align-items: bottom;
+
+  padding: 0 37px;
+  padding-bottom: 23px;
+  padding-top: 35px;
 }
 
 .stores__link {
+  display: block;
+
   height: 56px;
-  padding: 29px;
   width: 53px;
 
   color: @color-white;
@@ -18,14 +23,21 @@
   background-repeat: no-repeat;
 
   &--itunes {
+    height: 57px;
+
     background-image: url("../img/logo-apple.svg");
+    background-position: left 1px top -2px;
   }
 
   &--googleplay {
+    width: 52px;
+
     background-image: url("../img/logo-android.svg");
+    background-position: left 5px top 7px;
   }
 
   &--windows {
     background-image: url("../img/logo-microsoft.svg");
+    background-position: left 8px top 11px;
   }
 }

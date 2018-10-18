@@ -1,11 +1,32 @@
+@media (min-width: 1200px) {
+  .main-nav {
+    display: flex;
+  }
+}
+
 .main-menu {
+  display: none;
   margin: 0;
   padding: 0;
   /* Оформление */
   .ulstyle();
 }
 
+@media (min-width: 1200px) {
+  .main-menu {
+    align-items: center; //ну такое
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}
+
+.main-menu__item {
+  text-align: center;
+}
+
 .main-menu__link {
+  display: block;
   /* Типографика */
   color: @color-white;
   font-size: 18px;
@@ -20,5 +41,12 @@
 
   &:active {
     color: rgba(@color-fuchsia, 0.3);
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .main-menu__link {
+    text-transform: none;
   }
 }

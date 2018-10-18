@@ -1,5 +1,11 @@
 .photo {
-  background-color: rgb(242, 242, 242);
+  margin-bottom: 20px;
+}
+
+@media (min-width: 660px) {
+  .photo {
+    width: 300px;
+  }
 }
 
 .photo__wrap {
@@ -27,12 +33,18 @@
   }
 }
 
+.photo__image-link {
+  line-height: 0;
+}
+
 .photo__image {
   display: block;
 }
 
 .photo__likes {
   position: relative;
+
+  background-color: rgb(242, 242, 242);
 }
 
 .photo__quantity-likes {

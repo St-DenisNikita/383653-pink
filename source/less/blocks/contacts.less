@@ -4,9 +4,34 @@
   background-color: @color-white;
 }
 
+@media (min-width: 660px) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .contacts__lead {
   margin: 0;
+  width: 100%;
 
   font-size: 24px;
   font-weight: 300;
+  text-align: center;
+}
+
+.contacts__phone,
+.contacts__email,
+.contacts__adress {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .contacts__email {
+    order: 1;
+  }
 }

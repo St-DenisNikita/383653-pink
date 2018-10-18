@@ -1,6 +1,9 @@
 .btn {
+  display: block;
+
   font-size: 18px;
   font-weight: 700;
+  text-align: center;
 
   &--form,
   &--popup {
@@ -83,8 +86,12 @@
   }
 
   &--download-app {
-    border: 3px solid @color-white;
+    display: block;
 
+    border: 3px solid @color-white;
+    padding: 15px 0;
+
+    border-radius: 25px;
     color: @color-white;
     text-decoration: none;
   }
