@@ -1,8 +1,7 @@
 .briefcase {
   position: relative;
   left: -278px;
-
-  border-width: 3px;
+  border-collapse: collapse;
 }
 
 @media (min-width: 660px) {
@@ -12,9 +11,10 @@
 }
 
 .briefcase__title {
-  border-bottom: none;
-  padding-top: 14px;
-  padding-bottom: 18px;
+  border-left: 2px solid rgb(242, 242, 242);
+  border-right: 2px solid rgb(242, 242, 242);
+  padding-top: 17px;
+  padding-bottom: 17px;
   background-color: @color-main;
 
   &--img {
@@ -57,6 +57,12 @@
 }
 
 .briefcase__option-accessible {
+  border: 2px solid rgb(242, 242, 242);
+  border-top: none;
+  padding-bottom: 15px;
+  padding-left: 21px;
+  padding-right: 17px;
+  padding-top: 14px;
   background-color: @color-white;
 }
 

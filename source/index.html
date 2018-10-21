@@ -113,7 +113,7 @@
                 <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </blockquote>
             </article>
-            <div class="reviews__toggles toggles">
+            <div class="reviews__toggles toggles toggles--reviews">
               <button class="reviews__toggle toggle toggle--active" type="button"><span class="visually-hidden">1</span></button>
               <button class="reviews__toggle toggle" type="button"><span class="visually-hidden">2</span></button>
               <button class="reviews__toggle toggle" type="button"><span class="visually-hidden">3</span></button>
@@ -174,18 +174,20 @@
                 </td>
               </tr>
             </table>
-            <div class="price__toggles toggles">
-              <button class="price__toggle toggle" type="button"><span class="visually-hidden">1</span></button>
-              <button class="price__toggle toggle toggle--active" type="button"><span class="visually-hidden">2</span></button>
-              <button class="price__toggle toggle" type="button"><span class="visually-hidden">3</span></button>
+            <div class="price__toggles toggles toggles--price">
+              <button class="price__toggle toggle toggle--price" type="button"><span class="visually-hidden">1</span></button>
+              <button class="price__toggle toggle toggle--price toggle--active" type="button"><span class="visually-hidden">2</span></button>
+              <button class="price__toggle toggle toggle--price" type="button"><span class="visually-hidden">3</span></button>
             </div>
           </div>
         </div>
       </section>
       <section class="contacts container">
         <h2 class="contacts__title visually-hidden">Контакты</h2>
-        <p class="contacts__lead">Остались вопросы?</p>
-        <p class="contacts__lead">Свяжитесь с нами!</p>
+        <div class="contacts__leads">
+          <p class="contacts__lead">Остались вопросы?</p>
+          <p class="contacts__lead">Свяжитесь с нами!</p>
+        </div>
         <div class="contacts__phone contact">
           <p class="contact__text">Звоните:</p>
           <a class="contact__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
