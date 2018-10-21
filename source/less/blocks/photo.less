@@ -5,6 +5,9 @@
 @media (min-width: 660px) {
   .photo {
     width: 300px;
+
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -39,6 +42,9 @@
 
 .photo__image {
   display: block;
+
+  height: auto;
+  width: 100%;
 }
 
 .photo__comments {
@@ -48,9 +54,19 @@
   background-color: rgb(242, 242, 242);
 }
 
+@media (min-width: 660px) {
+  .photo__comments {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
+
 .photo__likes {
+  display: flex;
   position: relative;
 
+  margin-top: auto;
   padding-top: 10px;
 
   background-color: rgb(242, 242, 242);
