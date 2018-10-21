@@ -41,14 +41,23 @@
   display: block;
 }
 
+.photo__comments {
+  padding-bottom: 20px;
+  padding-left: 17px;
+  padding-top: 18px;
+  background-color: rgb(242, 242, 242);
+}
+
 .photo__likes {
   position: relative;
+
+  padding-top: 10px;
 
   background-color: rgb(242, 242, 242);
 }
 
 .photo__quantity-likes {
-  margin-left: 25px;
+  margin-left: 32px;
 
   color: @color-fuchsia;
   font-size: 12px;
@@ -59,8 +68,8 @@
 
   &::before {
     .pseudoelements();
-    left: 5px;
-    top: 5px;
+    left: 1px;
+    top: 16px;
 
     height: 12px;
     width: 13px;
