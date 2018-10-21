@@ -117,14 +117,14 @@
 }
 
 .features__picture {
-  display: block;
+  display: none;
   margin: 0 auto;
   position: relative;
   bottom: -40px;
 }
 
-.features__picture--none {
-  display: none;
+.features__item:last-child .features__picture {
+  display: block;
 }
 
 @media (min-width: 1200px) {
