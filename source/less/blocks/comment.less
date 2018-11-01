@@ -1,14 +1,47 @@
 .comment {
   display: flex;
   flex-wrap: wrap;
+
+
+  padding-bottom: 26px;
+  padding-left: 17px;
+  padding-right: 10px;
+  padding-top: 18px;
   margin: 0;
 
   background-color: rgb(242, 242, 242);
 }
 
+@media (min-width: 660px) {
+  .comment {
+    flex-direction: column;
+    flex-grow: 1;
+    padding-bottom: 28px;
+    padding-left: 27px;
+    padding-right: 32px;
+    padding-top: 24px;
+
+    &--panorama {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-bottom: 24px;
+      padding-right: 28px;
+    }
+  }
+}
+
+@media (min-width: 660px) {
+  .comment {
+    &--panorama {
+      padding-bottom: 23px;
+    }
+  }
+}
+
 .comment__name-autor {
   display: block;
-  margin-right: 5px;
+
+  margin-right: 4px;
 
   color: @color-main;
   font-size: 14px;
@@ -18,7 +51,6 @@
 }
 
 .comment__last-actions {
-  display: block;
   color: @color-main;
   font-size: 12px;
   font-style: normal;
@@ -29,7 +61,9 @@
 
 .comment__text {
   display: block;
-  margin: 0;
+
+  margin-bottom: 17px;
+  margin-top: 0;
   width: 100%;
 
   color: @color-main;
@@ -37,4 +71,81 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+}
+
+@media (min-width: 660px) {
+  .comment__text {
+    margin-bottom: auto;
+  }
+
+  .comment__text--panorama {
+    order: 1;
+
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 660px) {
+  .comment__likes {
+    width: 100%;
+
+    &--panorama {
+    margin-left: auto;
+    margin-top: 8px;
+    width: auto;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .comment__likes {
+    &--panorama {
+      margin-right: 4px;
+    }
+  }
+}
+
+.comment__quantity-likes {
+  display: flex;
+
+  color: @color-fuchsia;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+
+    height: 12px;
+    margin-right: 19px;
+    margin-top: -1px;
+    width: 13px;
+
+    background-image: url("../img/icon-heart.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 660px) {
+  .comment__quantity-likes {
+    &::before {
+      order: 1;
+
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    &--panorama::before {
+      order: 1;
+      margin-left: 18px;
+      margin-top: -2px;
+    }
+  }
+}
+
+.comment__quantity {
+  padding-left: 3px;
 }

@@ -5,27 +5,79 @@
 
 .features__leads {
   padding-bottom: 31px;
-  padding-top: 10px;
+  padding-top: 41px;
+}
+
+@media (min-width: 660px) {
+  .features__leads {
+    padding-top: 51px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__leads {
+    padding-top: 71px;
+  }
 }
 
 .features__lead {
   box-sizing: border-box;
   margin: 0;
-  padding: 0 20px;
-  padding-top: 31px;
+  margin-bottom: 31px;
+  padding: 0;
   width: 100%;
 
   color: @color-main;
   font-size: 24px;
   font-weight: 300;
-  line-height: 28px;
   text-align: center;
 }
 
+.features__lead:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 660px) {
+  .features__lead {
+    margin-bottom: 0;
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 660px) {
+  .features__lead:last-child {
+    padding: 0 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__lead {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__lead:last-child {
+    padding: 0 108px;
+  }
+}
+
 .features__wrap {
-  padding-top: 83px;
+  padding-top: 87px;
 
   background-color: rgb(242, 242, 242);
+}
+
+@media (min-width: 660px) {
+  .features__wrap {
+    padding-top: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__wrap {
+    padding-top: 50px;
+  }
 }
 
 @media (min-width: 660px) {
@@ -38,12 +90,13 @@
 @media (min-width: 1200px) {
   .features__inner {
     flex-direction: column;
+    align-items: center;
   }
 }
 
 .features__functions {
   box-sizing: border-box;
-  margin-bottom: 0;
+  margin-bottom: 31px;
   margin-top: 0;
   padding: 0;
 
@@ -53,39 +106,72 @@
 @media (min-width: 660px) {
   .features__functions {
     order: 1;
+
+    padding-top: 69px;
   }
 }
 
 @media (min-width: 1200px) {
   .features__functions {
+    padding-top: 55px;
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+  }
+}
+
+.features__images {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .features__images {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .features__item {
-  padding-bottom: 31px;
+  margin-bottom: 31px;
 }
 
 .features__item:last-child {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 @media (min-width: 660px) {
   .features__item {
-    width: 320px;
+    margin-bottom: 34px;
+    width: 310px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: 1200px) {
   .features__item {
-    margin: 0 auto;
-    width: 250px;
+    margin: 0;
+    width: 292px;
+  }
+
+  .features__item:first-child {
+    margin-left: 5px;
+  }
+
+  .features__item:last-child {
+    margin-right: 4px;
   }
 }
 
 .features__title {
   margin: 0;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 
   color: @color-black;
   font-size: 18px;
@@ -94,9 +180,20 @@
   text-align: center;
 }
 
-@media (min-width: 660px) and (max-width: 1200px) {
+@media (min-width: 660px) and (max-width: 1199px) {
   .features__title {
     text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__title {
+    width: 225px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 
@@ -110,25 +207,67 @@
   text-align: center;
 }
 
-@media (min-width: 660px) and (max-width: 1200px) {
+@media (min-width: 660px) and (max-width: 1199px) {
   .features__function {
     text-align: left;
   }
 }
 
-.features__picture {
-  display: none;
-  margin: 0 auto;
-  position: relative;
-  bottom: -40px;
+@media (min-width: 1200px) {
+  .features__function {
+    width: 240px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
-.features__item:last-child .features__picture {
+.features__picture {
+  display: none;
+}
+
+.features__image:last-child .features__picture {
+  padding-top: 10px;
   display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 660px) {
+  .features__image:last-child .features__picture {
+    padding: 0;
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 1200px) {
-  .features__picture--none {
+  .features__picture {
     display: block;
+    margin: 0 auto;
+  }
+}
+
+.features__researchs {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .features__researchs {
+    display: block;
+    position: relative;
+
+    padding-bottom: 125px;
+    padding-top: 95px;
+
+    background-color: @color-white;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__researchs {
+    padding-bottom: 114px;
+    padding-top: 109px;
+    background-color: rgb(242, 242, 242);
   }
 }

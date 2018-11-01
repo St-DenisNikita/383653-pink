@@ -5,9 +5,22 @@
   justify-content: space-between;
   align-items: bottom;
 
+  margin-bottom: 20px;
   padding: 0 37px;
-  padding-bottom: 20px;
-  padding-top: 33px;
+}
+
+@media (min-width: 660px) {
+  .stores {
+    margin: 0 auto;
+    margin-bottom: 34px;
+    width: 205px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .stores {
+    margin-bottom: 53px;
+  }
 }
 
 .stores__link {
@@ -29,11 +42,23 @@
     background-position: left 1px top -2px;
   }
 
+  @media (min-width: 660px) {
+    &--itunes {
+      background-position: left -1px top -2px;
+    }
+  }
+
   &--googleplay {
     width: 52px;
 
     background-image: url("../img/logo-android.svg");
     background-position: left 4px top 7px;
+  }
+
+  @media (min-width: 660px) {
+    &--googleplay {
+      background-position: left 5px top 5px;
+    }
   }
 
   &--windows {

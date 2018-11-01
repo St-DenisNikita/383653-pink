@@ -1,13 +1,25 @@
 .map {
   position: relative;
 
-  min-height: 645px;
+  height: 645px;
   width: 100%;
 
   color: @color-main;
   line-height: 0;
 
   background-color: @color-white;
+}
+
+@media (min-width: 660px) {
+  .map {
+    height: 402px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .map {
+    height: 504px;
+  }
 }
 
 .map-js {
@@ -19,11 +31,39 @@
   width: 100%;
 }
 
+@media (min-width: 660px) {
+  .map-js {
+    height: 402px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .map-js {
+    height: 504px;
+  }
+}
+
 .map-inner {
+  position: relative;
   margin: 0 auto;
-  width: 320px;
+  width: auto;
+  overflow: hidden;
+}
+
+@media (min-width: 660px) {
+  .map-inner {
+    height: 404px;
+  }
+}
+
+@media (min-width: 660px) {
+  .map-inner {
+    height: 540px;
+  }
 }
 
 .map-image {
   display: block;
+  width: 100%;
+  height: auto;
 }

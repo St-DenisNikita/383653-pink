@@ -11,6 +11,7 @@
 
 @media (min-width: 660px) {
   .download-app {
+    min-height: 728px;
     background-image: url("../img/iphone-hand-tablet@1x.png"),
       url("../img/bg-back-tablet@1x.jpg");
     background-position-x: calc(50% + 1px), center;
@@ -20,6 +21,7 @@
 
 @media (min-width: 1200px) {
   .download-app {
+    min-height: 854px;
     background-image: url("../img/iphone-hand-desktop@1x.png"),
       url("../img/bg-back-desktop@1x.jpg");
     background-position-x: calc(50% + 71px), center;
@@ -27,22 +29,24 @@
   }
 }
 
+.download-app__wrap {
+  padding-top: 490px;
+}
+
 @media (min-width: 660px) {
   .download-app__wrap {
-    display: flex;
-    justify-content: space-between;
+    padding-top: 204px;
   }
 }
 
-.download-app__picture {
-  position: relative;
-  left: -20px;
-  top: -1px;
+@media (min-width: 1200px) {
+  .download-app__wrap {
+    padding-top: 224px;
+  }
 }
 
 .download-app__attachment {
   padding-bottom: 30px;
-  padding-top: 490px;
 }
 
 @media (min-width: 660px) {
@@ -51,7 +55,34 @@
     z-index: 1;
     order: -1;
 
+    padding-bottom: 0;
+
     width: 300px;
+  }
+}
+
+.download-app__title {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .download-app__title {
+    display: block;
+    margin: 0;
+    margin-bottom: 35px;
+
+    color: @color-white;
+    font-family: inherit;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .download-app__title {
+    font-size: 50px;
+    margin-bottom: 56px;
   }
 }
 
@@ -62,4 +93,10 @@
   font-weight: 300;
   line-height: 24px;
   text-align: center;
+}
+
+@media (min-width: 660px) {
+  .download-app__support-devices {
+    font-size: 18px;
+  }
 }

@@ -7,8 +7,26 @@
   line-height: 18px;
 }
 
+@media (min-width: 1200px) {
+  .copyright {
+    font-size: 18px;
+  }
+}
+
 .copyright span {
   padding-top: 5px;
+}
+
+@media (min-width: 660px) {
+  .copyright span {
+    align-self: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .copyright span {
+    margin-top: -5px;
+  }
 }
 
 .copyright__link {
@@ -17,4 +35,11 @@
 
 .copyright__link img {
   display: block;
+}
+
+@media (min-width: 660px) {
+  .copyright__link {
+    align-self: center;
+    margin-top: 6px;
+  }
 }

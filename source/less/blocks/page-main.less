@@ -1,16 +1,9 @@
-.page-main {
-  color: @color-white;
-}
-
-.page-main__title {
-  position: relative;
-
-  margin-bottom: 0;
+.page-main__title-background {
+  margin-bottom: 45px;
+  padding-bottom: 56px;
+  padding-top: 100px;
 
   color: @color-white;
-  font-size: 24px;
-  font-weight: 300;
-  text-align: center;
 
   background-color: @color-main;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -18,23 +11,51 @@
   background-repeat: no-repeat;
 
   &--photo {
-    padding-bottom: 85px;
-    padding-top: 98px;
+    padding-bottom: 83px;
   }
 }
 
 @media (min-width: 660px) {
-  .page-main__title {
-    padding-top: 190px;
-
-    font-size: 50px;
+  .page-main__title-background {
+    margin-bottom: 92px;
+    padding-bottom: 81px;
+    padding-top: 182px;
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    &--photo {
+      padding-bottom: 140px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-main__title-background {
+    padding-bottom: 101px;
+    padding-top: 175px;
+
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+}
+
+.page-main__title {
+  color: @color-white;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media (min-width: 660px) {
+  .page-main__title {
+    font-size: 50px;
+    line-height: 1.19;
   }
 }
 
 @media (min-width: 1200px) {
   .page-main__title {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
+    &--photo {
+      width: 615px;
+    }
   }
 }

@@ -1,6 +1,4 @@
 .contacts {
-  padding-top: 44px;
-
   color: @color-main;
 
   background-color: @color-white;
@@ -15,7 +13,23 @@
 }
 
 .contacts__leads {
-  padding-bottom: 38px;
+  margin-bottom: 38px;
+  padding-top: 44px;
+  width: 100%;
+}
+
+@media (min-width: 660px) {
+  .contacts__leads {
+    margin-bottom: 47px;
+    padding-top: 48px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts__leads {
+    margin-bottom: 60px;
+    padding-top: 68px;
+  }
 }
 
 .contacts__lead {
@@ -26,6 +40,30 @@
   font-weight: 300;
   text-align: center;
 }
+
+@media (min-width: 660px) {
+  .contacts__lead {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts__lead {
+    font-size: 50px;
+  }
+}
+
+.contacts__email {
+  margin-bottom: 27px;
+}
+
+@media (min-width: 660px) {
+  .contacts__phone {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
 
 @media (min-width: 1200px) {
   .contacts__email {

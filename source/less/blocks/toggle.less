@@ -4,14 +4,6 @@
   text-align: center;
 }
 
-.toggles--reviews {
-  padding-top: 28px;
-}
-
-.toggles--price {
-  padding-top: 35px;
-}
-
 .toggle {
   border: 3px solid @color-white;
   margin-right: 9px;
@@ -38,5 +30,17 @@
     border: 3px solid @color-main;
 
     background-color: rgba(@color-main, 0);
+  }
+}
+
+@media (min-width: 660px) {
+  .toggles--price {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .toggles--reviews {
+    display: none;
   }
 }

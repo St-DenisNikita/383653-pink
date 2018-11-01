@@ -1,13 +1,22 @@
 .photo {
   margin-bottom: 20px;
+  min-height: 301px;
 }
 
 @media (min-width: 660px) {
   .photo {
     width: 300px;
+    min-height: 455px;
 
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo {
+    min-height: 555px;
+    margin-bottom: 54px;
   }
 }
 
@@ -48,9 +57,6 @@
 }
 
 .photo__comments {
-  padding-bottom: 20px;
-  padding-left: 17px;
-  padding-top: 18px;
   background-color: rgb(242, 242, 242);
 }
 
@@ -59,39 +65,9 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-  }
-}
 
-.photo__likes {
-  display: flex;
-  position: relative;
-
-  margin-top: auto;
-  padding-top: 10px;
-
-  background-color: rgb(242, 242, 242);
-}
-
-.photo__quantity-likes {
-  margin-left: 32px;
-
-  color: @color-fuchsia;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 24px;
-  text-decoration: none;
-  text-transform: uppercase;
-
-  &::before {
-    .pseudoelements();
-    left: 1px;
-    top: 16px;
-
-    height: 12px;
-    width: 13px;
-
-    background-image: url("../img/icon-heart.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+    &--panorama {
+      padding-bottom: 8px;
+    }
   }
 }
