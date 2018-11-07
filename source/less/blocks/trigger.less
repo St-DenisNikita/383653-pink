@@ -6,6 +6,7 @@
 
   cursor: pointer;
 }
+
 .main-nav--nojs .trigger {
   display: none;
 }
@@ -17,7 +18,7 @@
   background-color: rgba(@color-main, 0);
 
   &::before,
-   &::after{
+  &::after {
     position: absolute;
     content: "";
     display: block;
@@ -40,12 +41,12 @@
   }
 
   &:hover::before,
-   &:hover::after {
+  &:hover::after {
     background-color: @color-fuchsia;
   }
 
   &:active::before,
-   &:active::after {
+  &:active::after {
     background-color: rgba(@color-fuchsia, 0.3);
   }
 }
