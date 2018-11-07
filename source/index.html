@@ -7,17 +7,16 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened">
           <div class="page-header__top">
             <a class="page-header__logo" href="#">
               <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
             </a>
-            <button class="main-nav__trigger trigger" type="button" title="Главное меню"></button>
           </div>
+          <button class="main-nav__trigger trigger triggir--js" type="button" title="Главное меню"></button>
           <ul class="main-nav__list main-menu">
             <li class="main-menu__item">
-              <a class="main-menu__link main-menu__item--active" href="#">Главная</a>
+              <a class="main-menu__link main-menu__link--active" href="#">Главная</a>
             </li>
             <li class="main-menu__item">
               <a class="main-menu__link" href="photo.html">Фотографии</a>
@@ -30,7 +29,6 @@
             </li>
           </ul>
         </nav>
-      </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Приложение Pink</h1>
@@ -172,42 +170,42 @@
                 <td class="briefcase__option-accessible">
                   <p class="briefcase__option">Розовый фильтр</p>
                 </td>
-                <td class="briefcase__option-accessible">
-                  <p class="briefcase__option briefcase__option--yes">Розовый фильтр</p>
+                <td class="briefcase__option-accessible briefcase__option-accessible--yes">
+                  <p class="briefcase__option briefcase__option--hide">Розовый фильтр</p>
                 </td>
-                <td class="briefcase__option-accessible">
-                  <p class="briefcase__option briefcase__option--yes">Розовый фильтр</p>
+                <td class="briefcase__option-accessible briefcase__option-accessible--yes">
+                  <p class="briefcase__option briefcase__option--hide">Розовый фильтр</p>
                 </td>
-                <td class="briefcase__option-accessible">
-                  <p class="briefcase__option briefcase__option--yes">Розовый фильтр</p>
+                <td class="briefcase__option-accessible briefcase__option-accessible--yes">
+                  <p class="briefcase__option briefcase__option--hide">Розовый фильтр</p>
                 </td>
               </tr>
               <tr>
                 <td class="briefcase__option-accessible">
                   <p class="briefcase__option">Смайлики</p>
                 </td>
-                <td class="briefcase__option-accessible">
-                  <p class="briefcase__option briefcase__option--not">Смайлики</p>
+                <td class="briefcase__option-accessible briefcase__option-accessible--no">
+                  <p class="briefcase__option briefcase__option--hide">Смайлики</p>
                 </td>
-                <td class="briefcase__option-accessible">
-                  <p class="briefcase__option briefcase__option--yes">Смайлики</p>
+                <td class="briefcase__option-accessible briefcase__option-accessible--yes">
+                  <p class="briefcase__option briefcase__option--hide">Смайлики</p>
                 </td>
-                <td class="briefcase__option-accessible">
-                  <p class="briefcase__option briefcase__option--yes">Смайлики</p>
+                <td class="briefcase__option-accessible briefcase__option-accessible--yes">
+                  <p class="briefcase__option briefcase__option--hide">Смайлики</p>
                 </td>
               </tr>
               <tr>
                 <td class="briefcase__option-accessible">
                   <p class="briefcase__option">Комментарии</p>
                 </td>
-                <td class="briefcase__option-accessible">
-                  <p class="briefcase__option briefcase__option--not">Комментарии</p>
+                <td class="briefcase__option-accessible briefcase__option-accessible--no">
+                  <p class="briefcase__option briefcase__option--hide">Комментарии</p>
                 </td>
-                <td class="briefcase__option-accessible">
-                  <p class="briefcase__option briefcase__option--not">Комментарии</p>
+                <td class="briefcase__option-accessible briefcase__option-accessible--no">
+                  <p class="briefcase__option briefcase__option--hide">Комментарии</p>
                 </td>
-                <td class="briefcase__option-accessible">
-                  <p class="briefcase__option briefcase__option--yes">Комментарии</p>
+                <td class="briefcase__option-accessible briefcase__option-accessible--yes">
+                  <p class="briefcase__option briefcase__option--hide">Комментарии</p>
                 </td>
               </tr>
             </table>
@@ -239,8 +237,11 @@
         </div>
       </section>
       <section class="map">
-        <iframe class="map-js" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104365163!2d30.320894615962672!3d59.938794181876176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1538320690336" width="320" height="645"></iframe>
-        <div class="map-inner container">
+        <svg class="map__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
+          <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "/>
+        </svg>
+        <iframe class="map-js" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.32089461599762!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1541430861421" width="320" height="645"></iframe>
+        <div class="map-inner">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
             <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg">

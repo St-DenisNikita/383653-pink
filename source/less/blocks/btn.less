@@ -10,21 +10,20 @@
   &--form,
   &--popup {
     border: none;
+    padding-bottom: 17px;
+    padding-top: 16px;
+    width: 100%;
 
     color: @color-white;
     line-height: 30px;
     text-transform: uppercase;
 
     background-color: rgb(42, 171, 109);
+    border-radius: 3px;
   }
 
   &--form {
     margin-bottom: 35px;
-    padding-bottom: 17px;
-    padding-top: 16px;
-    width: 100%;
-
-    border-radius: 3px;
   }
 
   &--cancel,
@@ -135,14 +134,47 @@
 }
 
 @media (min-width: 660px) {
-  .btn--download-app {
-    margin-bottom: 47px;
+  .btn {
+    &--download-app {
+      margin-bottom: 47px;
+    }
+
+    &--popup {
+      margin: 0 auto;
+      width: 299px;
+
+      border-radius: 2px;
+    }
+
+    &--post {
+      margin-bottom: 23px;
+    }
   }
 }
 
 @media (min-width: 1200px) {
-  .btn--download-app {
-    margin-bottom: 68px;
-    font-size: 21px;
+  .btn {
+    &--download-app {
+      margin-bottom: 68px;
+      font-size: 21px;
+    }
+
+    &--sent {
+      width: 460px;
+    }
+
+    &--rejected {
+      width: 300px;
+    }
+
+    &--post {
+      margin-bottom: 0;
+    }
+
+    &--cancel,
+    &--post {
+      min-width: 183px;
+      margin-left: 46px;
+    }
   }
 }

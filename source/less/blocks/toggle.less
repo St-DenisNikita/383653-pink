@@ -14,6 +14,14 @@
   cursor: pointer;
   vertical-align: middle;
 
+  &:hover:not(&--active) {
+    background-color: rgba(@color-main, 0.6);
+  }
+
+  &:active:not(&--active) {
+    background-color: rgba(@color-main, 0.1);
+  }
+
   &:first-child {
     margin-left: 1px;
   }

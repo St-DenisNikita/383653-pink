@@ -2,18 +2,20 @@
   background-color: @color-white;
 }
 
-@media (min-width: 660px) {
-  .photos {
-
-  }
-}
-
 .photos__lead {
   color: @color-main;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   text-align: center;
+
+  &--top {
+    margin-bottom: 49px;
+  }
+
+  &--bottom {
+    padding-bottom: 42px;
+  }
 }
 
 @media (min-width: 660px) {
@@ -24,23 +26,11 @@
     width: 600px;
 
     &--top {
-      padding-top: 0;
-      margin-bottom: 49px;
-    }
-
-    &--bottom {
-      padding-bottom: 42px;
-    }
-  }
-}
-
-@media (width: 660px) {
-  .photos__lead {
-    &--top {
       margin-bottom: 76px;
     }
+
     &--bottom {
-      width: 470px;
+      width: 690px;
       margin-bottom: 69px;
       padding-bottom: 0;
     }
@@ -53,6 +43,7 @@
       margin-bottom: 88px;
       width: 900px;
     }
+
     &--bottom {
       width: 700px;
       margin-bottom: 4px;

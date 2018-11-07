@@ -1,33 +1,94 @@
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 22px;
+
+  background-color: @color-main;
+
+  &--closed {
+    background-color: rgba(@color-black, 0.3);
+  }
+}
+
+@media (min-width: 660px) {
+  .main-nav {
+    padding-top: 43px;
+  }
+}
+
+
 @media (min-width: 1200px) {
   .main-nav {
-    display: flex;
+    padding-bottom: 32px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 46px;
+
+    background-color: rgba(@color-black, 0.3);
   }
 }
 
 .main-menu {
-  display: none;
   margin: 0;
   padding: 0;
-  /* Оформление */
+  width: 100%;
   .ulstyle();
+
+  text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 1199px) {
+  .main-nav--opened .main-menu {
+    display: block;
+  }
+
+  .main-nav--closed .main-menu {
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) {
   .main-menu {
-    align-items: center; //ну такое
     display: flex;
-    justify-content: space-between;
     flex-grow: 1;
+    justify-content: space-between;
+
+    width: auto;
   }
 }
 
 .main-menu__item {
-  text-align: center;
+  border-bottom: 1px solid @color-black;
+  border-top: 1px solid rgba(@color-white, 0.15);
+  margin-left: -20px;
+  margin-right: -20px;
+
+  &:first-child {
+    box-shadow: 0 -1px 0 0 @color-black;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-menu__item {
+    border: none;
+    margin-left: 0;
+    margin-right: 0;
+
+    &:first-child {
+    box-shadow: none;
+    }
+  }
 }
 
 .main-menu__link {
   display: block;
-  /* Типографика */
+
+  padding-bottom: 15px;
+  padding-top: 15px;
+
   color: @color-white;
   font-size: 18px;
   font-weight: 700;
@@ -44,9 +105,30 @@
   }
 }
 
-
 @media (min-width: 1200px) {
   .main-menu__link {
+    border-bottom: 2px solid rgba(@color-white, 0);
+    padding: 0;
+    padding-bottom: 12px;
+
+    font-weight: 400;
+    line-height: 18px;
     text-transform: none;
+
+    &:active {
+    color: rgba(@color-white, 0.3);
+    }
+
+    &--active {
+      border-bottom-color: @color-white;
+
+      &:hover {
+        color: @color-white;
+      }
+
+      &:active {
+        color: @color-white;
+      }
+    }
   }
 }
