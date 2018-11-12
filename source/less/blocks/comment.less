@@ -12,29 +12,10 @@
   background-color: rgb(242, 242, 242);
 }
 
-@media (min-width: 660px) {
-  .comment {
-    flex-direction: column;
-    flex-grow: 1;
-    padding-bottom: 28px;
-    padding-left: 27px;
-    padding-right: 32px;
-    padding-top: 24px;
 
-    &--panorama {
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding-bottom: 24px;
-      padding-right: 28px;
-    }
-  }
-}
-
-@media (min-width: 660px) {
-  .comment {
-    &--panorama {
-      padding-bottom: 23px;
-    }
+@media (max-width: 659px) {
+  .photo:first-child .comment {
+    padding-bottom: 25px;
   }
 }
 
@@ -59,10 +40,15 @@
   text-transform: uppercase;
 }
 
+.photo:nth-child(4) .comment__last-actions,
+.photo:nth-child(6) .comment__last-actions {
+  margin-left: 2px;
+}
+
 .comment__text {
   display: block;
 
-  margin-bottom: 17px;
+  margin-bottom: 16px;
   margin-top: 0;
   width: 100%;
 
@@ -73,37 +59,15 @@
   line-height: 24px;
 }
 
-@media (min-width: 660px) {
-  .comment__text {
-    margin-bottom: auto;
-  }
-
-  .comment__text--panorama {
-    order: 1;
-
-    margin-bottom: 0;
+@media (max-width: 659px) {
+  .photo:nth-child(2) .comment__text,
+  .photo:nth-child(4) .comment__text,
+  .photo:nth-child(5) .comment__text,
+  .photo:nth-child(6) .comment__text {
+    margin-bottom: 17px;
   }
 }
 
-@media (min-width: 660px) {
-  .comment__likes {
-    width: 100%;
-
-    &--panorama {
-      margin-left: auto;
-      margin-top: 8px;
-      width: auto;
-    }
-  }
-}
-
-@media (min-width: 960px) {
-  .comment__likes {
-    &--panorama {
-      margin-right: 4px;
-    }
-  }
-}
 
 .comment__quantity-likes {
   display: flex;
@@ -129,7 +93,47 @@
   }
 }
 
+.comment__quantity {
+  padding-left: 3px;
+}
+
 @media (min-width: 660px) {
+  .comment {
+    flex-direction: column;
+    flex-grow: 1;
+    padding-bottom: 28px;
+    padding-left: 27px;
+    padding-right: 32px;
+    padding-top: 24px;
+
+    &--panorama {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-bottom: 24px;
+      padding-right: 28px;
+    }
+  }
+
+  .comment__text {
+    margin-bottom: auto;
+
+    &--panorama {
+      order: 1;
+
+      margin-bottom: 0;
+    }
+  }
+
+  .comment__likes {
+    margin-top: 8px;
+    width: 100%;
+
+    &--panorama {
+      margin-left: auto;
+      width: auto;
+    }
+  }
+
   .comment__quantity-likes {
     &::before {
       order: 1;
@@ -146,6 +150,16 @@
   }
 }
 
-.comment__quantity {
-  padding-left: 3px;
+@media (min-width: 960px) {
+  .comment {
+    &--panorama {
+      padding-bottom: 23px;
+    }
+  }
+
+  .comment__likes {
+    &--panorama {
+      margin-right: 4px;
+    }
+  }
 }

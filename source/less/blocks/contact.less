@@ -3,43 +3,21 @@
   flex-direction: column;
 
   margin: 0 auto;
+  margin-bottom: 24px;
   width: 270px;
 
-  &:not(:last-child) {
-    margin-bottom: 25px;
+  &:last-child {
+    margin-bottom: 0;
   }
-}
 
-@media (min-width: 660px) {
-  .contact:not(:last-child) {
-    margin-bottom: 47px;
-  }
-}
-
-@media (min-width: 660px) {
-  .contact--phone {
-    margin-left: 14px;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 960px) {
-  .contact--phone {
-    margin-left: 16px;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 660px) {
-  .contact--email {
-    margin-left: auto;
-    margin-right: 15px;
+  &--email {
+    margin-bottom: 27px;
   }
 }
 
 .contact__text {
   margin: 0;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 
   color: @color-main;
   font-size: 18px;
@@ -47,48 +25,13 @@
   text-align: center;
 }
 
-@media (min-width: 660px) {
-  .contact__text {
-    margin-bottom: 7px;
-  }
-}
-
-@media (min-width: 960px) {
-  .contact__text {
-    margin-bottom: 26px;
-  }
-}
-
 .contacts__email .contact__text {
-  margin-bottom: 5px;
-}
-
-@media (min-width: 660px) {
-  .contacts__email .contact__text {
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: 960px) {
-  .contacts__email .contact__text {
-    margin-bottom: 28px;
-  }
-}
-
-.contacts__adress .contact__text {
   margin-bottom: 6px;
+  margin-left: 4px;
 }
 
-@media (min-width: 660px) {
-  .contacts__adress .contact__text {
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: 960px) {
-  .contacts__adress .contact__text {
-    margin-bottom: 27px;
-  }
+.contacts__email .contact__email {
+  margin-left: 17px;
 }
 
 .contact__phone,
@@ -118,11 +61,62 @@
 
 .contact__adress {
   margin: 0;
+
+  line-height: 1.21;
+}
+
+.contact--adress .contact__text {
+  margin-bottom: 6px;
 }
 
 @media (min-width: 660px) {
+  .contact:not(:last-child) {
+    margin-bottom: 47px;
+  }
+
+  .contact--phone {
+    margin-left: 14px;
+    margin-right: auto;
+  }
+
+  .contact--email {
+    margin-left: auto;
+    margin-right: 17px;
+  }
+
+  .contact__text {
+    margin-bottom: 7px;
+  }
+
+  .contacts__email .contact__text {
+    margin-bottom: 10px;
+  }
+
+  .contacts__adress .contact__text {
+    margin-bottom: 8px;
+  }
+
   .contact__phone,
   .contact__email {
     text-align: right;
+  }
+}
+
+@media (min-width: 960px) {
+  .contact--phone {
+    margin-left: 16px;
+    margin-right: auto;
+  }
+
+  .contact__text {
+    margin-bottom: 26px;
+  }
+
+  .contacts__email .contact__text {
+    margin-bottom: 28px;
+  }
+
+  .contacts__adress .contact__text {
+    margin-bottom: 26px;
   }
 }

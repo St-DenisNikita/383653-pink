@@ -8,11 +8,9 @@
   <body>
     <header class="page-header">
         <nav class="main-nav main-nav--opened">
-          <div class="page-header__top">
-            <a class="page-header__logo" href="#">
-              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-            </a>
-          </div>
+          <a class="logo" href="#">
+            <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+          </a>
           <button class="main-nav__trigger trigger triggir--js" type="button" title="Главное меню"></button>
           <ul class="main-nav__list main-menu">
             <li class="main-menu__item">
@@ -137,6 +135,8 @@
                 <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </blockquote>
             </article>
+            <button class="reviews__button reviews__button--prev"><span class="visually-hidden">Назад</span></button>
+            <button class="reviews__button reviews__button--next"><span class="visually-hidden">Вперед</span></button>
             <div class="reviews__toggles toggles toggles--reviews">
               <button class="reviews__toggle toggle toggle--active" type="button"><span class="visually-hidden">1</span></button>
               <button class="reviews__toggle toggle" type="button"><span class="visually-hidden">2</span></button>
@@ -167,7 +167,7 @@
                 </th>
               </tr>
               <tr>
-                <td class="briefcase__option-accessible">
+                <td class="briefcase__option-accessible briefcase__option-accessible--case">
                   <p class="briefcase__option">Розовый фильтр</p>
                 </td>
                 <td class="briefcase__option-accessible briefcase__option-accessible--yes">
@@ -181,7 +181,7 @@
                 </td>
               </tr>
               <tr>
-                <td class="briefcase__option-accessible">
+                <td class="briefcase__option-accessible briefcase__option-accessible--case">
                   <p class="briefcase__option">Смайлики</p>
                 </td>
                 <td class="briefcase__option-accessible briefcase__option-accessible--no">
@@ -195,7 +195,7 @@
                 </td>
               </tr>
               <tr>
-                <td class="briefcase__option-accessible">
+                <td class="briefcase__option-accessible briefcase__option-accessible--case">
                   <p class="briefcase__option">Комментарии</p>
                 </td>
                 <td class="briefcase__option-accessible briefcase__option-accessible--no">

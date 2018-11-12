@@ -1,30 +1,12 @@
 .social {
   padding-bottom: 40px;
-  padding-top: 37px;
-}
-
-@media (min-width: 660px) {
-  .social {
-    padding: 0;
-    width: 196px;
-  }
-}
-
-@media (min-width: 960px) {
-  .social {
-    margin-top: 3px;
-    width: 162px;
-  }
-
-  .page-footer--index .social {
-    width: 169px;
-  }
+  padding-top: 40px;
+  width: 178px;
 }
 
 .social-links {
   .ulstyle();
   display: flex;
-  width: 178px;
 }
 
 .social-links__item:not(:last-child) {
@@ -64,5 +46,23 @@
   &:active {
     opacity: 0.3;
     border-color: rgba(@color-main, 0.3);
+  }
+}
+
+@media (min-width: 660px) {
+  .social {
+    padding: 0;
+    width: 196px;
+  }
+}
+
+@media (min-width: 960px) {
+  .social {
+    margin-top: 3px;
+    width: 162px;
+  }
+
+  .page-footer--index .social {
+    width: 171px;
   }
 }

@@ -6,47 +6,46 @@
   margin-bottom: 35px;
 }
 
-@media (min-width: 660px) {
-  .briefcase {
-    left: 0;
-  }
-}
-
 .briefcase__title {
   border-left: 2px solid rgb(242, 242, 242);
   border-right: 2px solid rgb(242, 242, 242);
   padding: 0;
-  padding-top: 15px;
-  padding-bottom: 18px;
+  padding-top: 16px;
+  padding-bottom: 20px;
   min-width: 276px;
 
   background-color: @color-main;
-  overflow: hidden;
 
   &--img {
     position: relative;
   }
 
   &--img::before {
-    content: "Хит";
+    content: "";
     display: block;
     position: absolute;
-    left: -31px;
-    top: 12px;
 
-    height: 29px;
-    width: 110px;
+    height: 73px;
+    width: 73px;
+    left: -2px;
+    top: 0;
 
-    color: @color-white;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 26px;
-    text-transform: uppercase;
-
-    background-color: @color-fuchsia;
-    background-position: center;
+    background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat;
-    transform: rotate(-45deg);
+  }
+
+  &--img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 8px;
+    top: 13px;
+
+    height: 26px;
+    width: 27px;
+
+    background-image: url("../img/hit.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -54,72 +53,15 @@
   display: none;
 }
 
-@media (min-width: 660px) {
-  .briefcase__title {
-    min-width: 154px;
-    padding-bottom: 8px;
-    padding-top: 11px;
-
-    &:first-child {
-      min-width: 157px;
-    }
-
-    &:nth-child(2) {
-      min-width: 152px;
-    }
-
-    &:nth-child(3) {
-      min-width: 153px;
-    }
-  }
-}
-
-@media (min-width: 660px) {
-  .briefcase__title:first-child {
-    display: table-cell;
-    border: none;
-
-    background-color: rgba(@color-main, 0);
-  }
-}
-
-@media (min-width: 960px) {
-  .briefcase__title {
-    min-width: 233px;
-    padding-bottom: 20px;
-    padding-top: 16px;
-
-    &:first-child,
-    &:nth-child(2),
-    &:nth-child(3) {
-      min-width: 233px;
-    }
-  }
-}
-
 .briefcase__name {
   margin: 0;
+  margin-bottom: 2px;
 
   color: @color-white;
   font-size: 18px;
   font-weight: 700;
-  line-height: 33px;
+  line-height: 30px;
   text-transform: uppercase;
-}
-
-@media (min-width: 660px) {
-  .briefcase__name {
-    font-size: 16px;
-    line-height: 30px;
-  }
-}
-
-@media (min-width: 960px) {
-  .briefcase__name {
-    margin-bottom: 2px;
-
-    font-size: 18px;
-  }
 }
 
 .briefcase__price {
@@ -128,31 +70,18 @@
   color: @color-white;
   font-size: 24px;
   font-weight: 300;
-  line-height: 32.8px;
+  line-height: 30px;
   text-transform: uppercase;
-}
-
-@media (min-width: 660px) {
-  .briefcase__price {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
-@media (min-width: 960px) {
-  .briefcase__price {
-    font-size: 24px;
-  }
 }
 
 .briefcase__option-accessible {
   position: relative;
   border: 2px solid rgb(242, 242, 242);
   border-top: none;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   padding-left: 21px;
   padding-right: 17px;
-  padding-top: 14px;
+  padding-top: 15px;
   background-color: @color-white;
 
   &--yes::before {
@@ -197,12 +126,61 @@
   }
 }
 
+.briefcase__option-accessible:first-child {
+  display: none;
+}
+
+.briefcase__option {
+  position: relative;
+  margin: 0;
+
+  color: @color-main;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
 @media (min-width: 660px) {
+  .briefcase {
+    left: 0;
+  }
+
+  .briefcase__title {
+    border-left: none;
+    min-width: 154px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+
+  .briefcase__title:first-child {
+    display: table-cell;
+    border: none;
+
+    background-color: rgba(@color-main, 0);
+  }
+
+  .briefcase__name {
+    margin-bottom: 0;
+
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .briefcase__price {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
   .briefcase__option-accessible {
     padding-bottom: 8px;
-    padding-left: 17px;
+    padding-left: 15px;
     padding-top: 7px;
     padding-right: 0;
+
+    &--case {
+      border-top: 2px solid rgb(242, 242, 242);
+    }
 
     &--yes::before {
       top: 10px;
@@ -219,23 +197,95 @@
       left: 71px;
     }
   }
-}
 
-.briefcase__option-accessible:first-child {
-  display: none;
-}
-
-@media (min-width: 660px) {
   .briefcase__option-accessible:first-child {
     display: table-cell;
+  }
+
+  .briefcase__option {
+    text-transform: none;
+
+    &--hide {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 660px) and (max-width: 959px) {
+  .briefcase__title {
+    &--img::before {
+      left: 0;
+      top: 0;
+      background-image: url("../img/bg-hit-tablet.svg");
+    }
+
+    &--img::after {
+      left: 6px;
+      top: 4px;
+    }
+
+    &:first-child,
+    &:last-child {
+      min-width: 155px;
+    }
+
+    &:nth-child(2) {
+      min-width: 154px;
+    }
+
+    &:nth-child(3) {
+      min-width: 152px;
+    }
   }
 }
 
 @media (min-width: 960px) {
+  .briefcase {
+    margin-bottom: 0;
+  }
+
+  .briefcase__title {
+    min-width: 234px;
+    padding-bottom: 23px;
+    padding-top: 16px;
+
+    &:nth-child(2),
+    &:last-child {
+      min-width: 235px;
+    }
+
+    &:nth-child(3) {
+      min-width: 232px;
+    }
+
+    &--img::before {
+      left: 0;
+    }
+
+    &--img::after {
+      left: 10px;
+    }
+  }
+
+  .briefcase__title:nth-child(2) .briefcase__name,
+  .briefcase__title:nth-child(2) .briefcase__price {
+    margin-left: 3px;
+  }
+
+  .briefcase__name {
+    margin-bottom: 4px;
+
+    font-size: 18px;
+  }
+
+  .briefcase__price {
+    font-size: 24px;
+  }
+
   .briefcase__option-accessible {
-    padding-bottom: 15px;
+    padding-bottom: 16px;
     padding-left: 21px;
-    padding-top: 14px;
+    padding-top: 13px;
     padding-right: 0;
 
     &--yes::before {
@@ -253,30 +303,7 @@
       left: 111px;
     }
   }
-}
 
-.briefcase__option {
-  position: relative;
-  margin: 0;
-
-  color: @color-main;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
-@media (min-width: 660px) {
-  .briefcase__option {
-    text-transform: none;
-
-    &--hide {
-      display: none;
-    }
-  }
-}
-
-@media (min-width: 960px) {
   .briefcase__option {
     font-size: 18px;
   }
