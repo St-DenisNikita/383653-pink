@@ -8,23 +8,6 @@
   line-height: 0;
 
   background-color: @color-white;
-
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    z-index: 5;
-    top: calc(50% - 17px);
-    left: calc(50% - 18px);
-
-    box-sizing: border-box;
-    border: 9px solid @color-white;
-    height: 35px;
-    width: 36px;
-
-    background-color: @color-fuchsia;
-    border-radius: 50%;
-  }
 }
 
 @media (min-width: 660px) {

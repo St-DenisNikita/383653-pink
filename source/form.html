@@ -67,7 +67,7 @@
         <form class="contest__form form-contest" action="https://echo.htmlacademy.ru" method="get">
           <div class="form-contest__wrapper form-contest__wrapper--name">
             <fieldset class="form-contest__fieldset form-contest__fieldset--name">
-              <legend class="form-contest__legend visually-hidden">ФИО</legend>
+              <legend class="form-contest__legend visually-hidden" align="center">ФИО</legend>
               <ul class="form-contest__list form-contest__list--name">
                 <li class="form-contest__option form-contest__option--name">
                   <label class="form-contest__label form-contest__label--name" for="user-surname">Фамилия:</label>
@@ -86,7 +86,7 @@
           </div>
           <div class="form-contest__wrapper form-contest__wrapper--checkbox">
             <fieldset class="form-contest__fieldset form-contest__fieldset--checkbox">
-              <legend class="form-contest__legend form-contest__legend--checkbox">Ваши безбашенные достижения&nbsp;в&nbsp;путешествии</legend>
+              <legend class="form-contest__legend form-contest__legend--checkbox" align="center">Ваши безбашенные достижения&nbsp;в&nbsp;путешествии</legend>
               <ul class="form-contest__list form-contest__list--checkbox">
                 <li class="form-contest__option form-contest__option--checkbox form-contest__option--checkbox-1">
                   <input class="form-contest__checkbox" type="checkbox" name="selfie-shark" id="user-selfie-shark" checked>
@@ -117,7 +117,7 @@
           </div>
           <div class="form-contest__wrapper form-contest__wrapper--contacts">
             <fieldset class="form-contest__fieldset form-contest__fieldset--contacts">
-              <legend class="form-contest__legend form-contest__legend--contacts">Контактная информация</legend>
+              <legend class="form-contest__legend form-contest__legend--contacts" align="center">Контактная информация</legend>
               <ul class="form-contest__list form-contest__list--contacts">
                 <li class="form-contest__option form-contest__option--contacts form-contest__option--phohe">
                   <label class="form-contest__label form-contest__label--contacts" for="user-phohe">Номер телефона</label>
@@ -132,7 +132,7 @@
           </div>
           <div class="form-contest__wrapper form-contest__wrapper--radio">
             <fieldset class="form-contest__fieldset form-contest__fieldset--radio">
-              <legend class="form-contest__legend form-contest__legend--radio">С каким приложением путешествовали?</legend>
+              <legend class="form-contest__legend form-contest__legend--radio" align="center">С каким приложением путешествовали?</legend>
               <ul class="form-contest__list form-contest__list--radio">
                 <li class="form-contest__option form-contest__option--radio">
                   <input class="form-contest__radio" type="radio" name="OS" id="OS-iOS" value="iOS" checked>
@@ -151,7 +151,7 @@
           </div>
           <div class="form-contest__wrapper form-contest__wrapper--review">
             <fieldset class="form-contest__fieldset form-contest__fieldset--review">
-              <legend class="form-contest__legend form-contest__legend--review">
+              <legend class="form-contest__legend form-contest__legend--review" align="center">
                 <label class="form-contest__label form-contest__label--textarea" for="user-impression">Опишите свои эмоции</label>
             </legend>
               <textarea class="form-contest__textarea" name="impression" id="user-impression" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -198,5 +198,6 @@
       <p class="popup__text popup__text--rejected">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="popup__btn btn btn--popup btn--rejected" type="button">ОК</button>
     </div>
+    <script type="text/javascript" src="js/picturefill.js"></script>
   </body>
 </html>
