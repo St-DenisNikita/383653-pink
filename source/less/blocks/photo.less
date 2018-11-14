@@ -3,23 +3,6 @@
   min-height: 301px;
 }
 
-@media (min-width: 660px) {
-  .photo {
-    width: 300px;
-    min-height: 455px;
-
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 960px) {
-  .photo {
-    min-height: 555px;
-    margin-bottom: 54px;
-  }
-}
-
 .photo__wrap {
   &--panorama {
     position: relative;
@@ -61,6 +44,14 @@
 }
 
 @media (min-width: 660px) {
+  .photo {
+    width: 300px;
+    min-height: 455px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
   .photo__comments {
     display: flex;
     flex-direction: column;
@@ -69,5 +60,12 @@
     &--panorama {
       padding-bottom: 8px;
     }
+  }
+}
+
+@media (min-width: 960px) {
+  .photo {
+    min-height: 555px;
+    margin-bottom: 54px;
   }
 }
