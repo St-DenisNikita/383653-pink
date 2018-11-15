@@ -8,6 +8,14 @@
   line-height: 0;
 
   background-color: @color-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 40px;
+  }
 }
 
 @media (min-width: 660px) {
