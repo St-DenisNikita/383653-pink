@@ -1,7 +1,7 @@
 .map {
   position: relative;
 
-  height: 219px;
+  height: 200px;
   width: 100%;
 
   color: @color-main;
@@ -12,30 +12,18 @@
   &::before {
     content: "";
     position: absolute;
+    display: block;
+    z-index: 2;
 
     width: 100%;
-    height: 40px;
-  }
-}
+    height: 33px;
 
-@media (min-width: 660px) {
-  .map {
-    height: 402px;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    //background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg version='1' xmlns='http://www.w3.org/2000/svg' width='595.28' height='61.905' viewBox='0 0 660 100' preserveAspectRatio='none'%3E%3Cpath fill='%23000' d='M301 100h-1L0 1V0h660v1z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: left 50% top 0;
+    background-size: 100% 33px;
   }
-}
-
-@media (min-width: 960px) {
-  .map {
-    height: 504px;
-  }
-}
-
-.map__svg {
-  position: absolute;
-  z-index: 3;
-  width: 100vw;
-  height: auto;
-  top: 0;
 }
 
 .map-js {
@@ -44,44 +32,60 @@
   z-index: 1;
 
   border: none;
-  height: 219px;
+  height: 200px;
   width: 100%;
-}
-
-@media (min-width: 660px) {
-  .map-js {
-    height: 402px;
-  }
-}
-
-@media (min-width: 960px) {
-  .map-js {
-    height: 504px;
-  }
 }
 
 .map-inner {
   position: relative;
-  height: 219px;
+  height: 200px;
   margin: 0 auto;
   width: auto;
   overflow: hidden;
-}
-
-@media (min-width: 660px) {
-  .map-inner {
-    height: 404px;
-  }
-}
-
-@media (min-width: 960px) {
-  .map-inner {
-    height: 540px;
-  }
 }
 
 .map-image {
   display: block;
   width: 100%;
   height: auto;
+}
+
+@media (min-width: 660px) {
+  .map {
+    height: 375px;
+
+    &::before {
+      height: 67px;
+
+      background-size: 100% 67px;
+    }
+  }
+
+  .map-js {
+    height: 375px;
+  }
+
+  .map-inner {
+    height: 375px;
+  }
+}
+
+@media (min-width: 960px) {
+  .map {
+    height: 480px;
+
+    &::before {
+      height: 80px;
+
+      background-size: 100% 80px;
+    }
+  }
+
+  .map-js {
+    height: 480px;
+  }
+
+  .map-inner {
+    height: 480px;
+  }
 }
