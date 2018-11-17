@@ -12,13 +12,6 @@
   background-color: rgb(242, 242, 242);
 }
 
-
-@media (max-width: 659px) {
-  .photo:first-child .comment {
-    padding-bottom: 25px;
-  }
-}
-
 .comment__name-autor {
   display: block;
 
@@ -59,16 +52,6 @@
   line-height: 24px;
 }
 
-@media (max-width: 659px) {
-  .photo:nth-child(2) .comment__text,
-  .photo:nth-child(4) .comment__text,
-  .photo:nth-child(5) .comment__text,
-  .photo:nth-child(6) .comment__text {
-    margin-bottom: 17px;
-  }
-}
-
-
 .comment__quantity-likes {
   display: flex;
 
@@ -95,6 +78,20 @@
 
 .comment__quantity {
   padding-left: 3px;
+}
+
+
+@media (max-width: 659px) {
+  .photo:first-child .comment {
+    padding-bottom: 25px;
+  }
+
+  .photo:nth-child(2) .comment__text,
+  .photo:nth-child(4) .comment__text,
+  .photo:nth-child(5) .comment__text,
+  .photo:nth-child(6) .comment__text {
+    margin-bottom: 17px;
+  }
 }
 
 @media (min-width: 660px) {
