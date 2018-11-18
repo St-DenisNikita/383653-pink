@@ -5,15 +5,25 @@
   font-weight: 700;
   text-align: center;
 
+  cursor: pointer;
+
   &--form,
   &--popup {
     border: none;
+    padding-bottom: 17px;
+    padding-top: 16px;
+    width: 100%;
 
     color: @color-white;
     line-height: 30px;
     text-transform: uppercase;
 
     background-color: rgb(42, 171, 109);
+    border-radius: 3px;
+  }
+
+  &--form {
+    margin-bottom: 35px;
   }
 
   &--cancel,
@@ -42,12 +52,17 @@
   &--post {
     border-style: solid;
     border-width: 3px;
+    padding-bottom: 17px;
+    padding-top: 14px;
+    width: 100%;
 
     background-color: rgb(242, 242, 242);
+    border-radius: 30px;
   }
 
   &--post {
     border-color: @color-fuchsia;
+    margin-bottom: 12px;
 
     color: @color-fuchsia;
   }
@@ -89,9 +104,13 @@
     display: block;
 
     border: 3px solid @color-white;
-    padding: 15px 0;
+    margin-bottom: 33px;
+    padding-bottom: 17px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 14px;
 
-    border-radius: 25px;
+    border-radius: 26px;
     color: @color-white;
     text-decoration: none;
   }
@@ -104,5 +123,68 @@
 
   &--download-app:active {
     color: rgba(@color-fuchsia, 0.3);
+  }
+}
+
+@media (min-width: 660px) {
+  .btn--form {
+    margin-bottom: 0;
+    width: 300px;
+  }
+}
+
+@media (min-width: 660px) {
+  .btn {
+    &--download-app {
+      margin-bottom: 47px;
+    }
+
+    &--popup {
+      margin: 0 auto;
+      width: 299px;
+
+      border-radius: 2px;
+    }
+
+    &--post {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media (min-width: 660px) and (max-width: 959px) {
+  .btn {
+    &--post,
+    &--cancel {
+      padding-left: 2px;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .btn {
+    &--download-app {
+      margin-bottom: 68px;
+      font-size: 21px;
+    }
+
+    &--sent {
+      width: 460px;
+    }
+
+    &--rejected {
+      width: 300px;
+    }
+
+    &--post {
+      margin-bottom: 0;
+    }
+
+    &--cancel,
+    &--post {
+      display: inline-block;
+      min-width: 182px;
+      width: auto;
+    }
   }
 }

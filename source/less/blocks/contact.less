@@ -1,11 +1,35 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  margin-bottom: 24px;
+  width: 270px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--email {
+    margin-bottom: 27px;
+  }
+}
+
 .contact__text {
   margin: 0;
+  margin-bottom: 4px;
 
   color: @color-main;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
 }
+
+.contacts__email .contact__text {
+  margin-bottom: 6px;
+  margin-left: 4px;
+}
+
 
 .contact__phone,
 .contact__email,
@@ -20,6 +44,71 @@
   text-align: center;
 }
 
+.contact__phone:hover,
+.contact__email:hover {
+  color: @color-main;
+  text-decoration: underline;
+}
+
+.contact__phone:active,
+.contact__email:active {
+  color: rgba(@color-main, 0.3);
+  text-decoration: none;
+}
+
 .contact__adress {
   margin: 0;
+
+  line-height: 1.21;
+}
+
+.contact--adress .contact__text {
+  margin-bottom: 6px;
+}
+
+@media (min-width: 660px) {
+  .contact:not(:last-child) {
+    margin-bottom: 45px;
+  }
+
+  .contact--phone {
+    margin-left: 14px;
+    margin-right: auto;
+  }
+
+  .contact--email {
+    margin-left: auto;
+    margin-right: 17px;
+  }
+
+  .contact__text {
+    margin-bottom: 7px;
+  }
+
+  .contacts__email .contact__text {
+    margin-bottom: 10px;
+  }
+
+  .contacts__adress .contact__text {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 960px) {
+  .contact--phone {
+    margin-left: 16px;
+    margin-right: auto;
+  }
+
+  .contact__text {
+    margin-bottom: 26px;
+  }
+
+  .contacts__email .contact__text {
+    margin-bottom: 28px;
+  }
+
+  .contacts__adress .contact__text {
+    margin-bottom: 26px;
+  }
 }

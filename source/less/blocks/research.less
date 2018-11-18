@@ -1,0 +1,122 @@
+.research {
+  position: relative;
+  margin-left: auto;
+  width: 310px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -38px;
+    left: -308px;
+    height: 276px;
+    width: 239px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 238.5px;
+  }
+
+  &::after {
+    content: "24";
+    display: block;
+    position: absolute;
+    left: -290px;
+    top: 17px;
+
+    box-sizing: border-box;
+    border: 14px solid @color-fuchsia;
+    height: 202px;
+    width: 202px;
+
+    color: @color-fuchsia;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 163px;
+    text-align: center;
+    border-radius: 50%;
+  }
+}
+
+.research__title {
+  margin: 0;
+  margin-bottom: 10px;
+  width: 170px;
+
+  color: @color-black;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.research__text {
+  margin: 0;
+  margin-bottom: 10px;
+  width: 296px;
+  color: @color-main;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.research__link {
+  color: @color-fuchsia;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+  &:hover {
+    color: @color-main;
+  }
+
+  &:active {
+    color: rgba(@color-main, 0.3);
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .research {
+    width: 573px;
+
+    &::before {
+      top: -95px;
+      left: -367px;
+      height: 347px;
+      width: 299px;
+      background-size: 299px;
+    }
+
+    &::after {
+      left: -344px;
+      top: -25px;
+
+      border: 17px solid @color-fuchsia;
+      height: 253px;
+      width: 253px;
+
+      font-size: 120px;
+      font-weight: 700;
+      line-height: 206px;
+    }
+  }
+
+  .research__title {
+    margin-bottom: 24px;
+    width: auto;
+
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .research__text {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    width: 530px;
+  }
+
+  .research__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

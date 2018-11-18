@@ -1,6 +1,52 @@
 .copyright {
+  display: flex;
+
+  width: 128px;
+
   color: @color-main;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+}
+
+.copyright span {
+  padding-top: 5px;
+}
+
+.copyright__link {
+  height: 34px;
+  margin-left: 14px;
+}
+
+.copyright__link img {
+  display: block;
+
+  margin-top: -1px;
+}
+
+@media (min-width: 660px) {
+  .copyright span {
+    align-self: center;
+
+    padding-top: 0;
+  }
+
+  .copyright__link {
+    align-self: center;
+
+    margin-top: 4px;
+  }
+}
+
+@media (min-width: 960px) {
+  .copyright {
+    font-size: 18px;
+
+    width: 154px;
+  }
+
+  .copyright__link {
+    align-self: center;
+    margin-top: 7px;
+  }
 }

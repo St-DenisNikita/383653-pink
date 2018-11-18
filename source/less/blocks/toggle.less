@@ -1,20 +1,54 @@
 .toggles {
   margin: 0 auto;
-  padding-top: 33px;
-  width: 62px;
+
+  text-align: center;
 }
 
 .toggle {
   border: 3px solid @color-white;
+  margin-right: 9px;
   padding: 3px;
 
   background-color: rgba(@color-main, 0.3);
   border-radius: 50%;
+  cursor: pointer;
   vertical-align: middle;
+
+  &:hover:not(&--active) {
+    background-color: rgba(@color-main, 0.6);
+  }
+
+  &:active:not(&--active) {
+    background-color: rgba(@color-main, 0.1);
+  }
+
+  &:first-child {
+    margin-left: 1px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--price {
+    border-color: rgb(242, 242, 242);
+  }
 
   &--active {
     border: 3px solid @color-main;
 
     background-color: rgba(@color-main, 0);
+  }
+}
+
+@media (min-width: 660px) {
+  .toggles--price {
+    display: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .toggles--reviews {
+    display: none;
   }
 }

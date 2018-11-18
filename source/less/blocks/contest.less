@@ -1,22 +1,6 @@
-.contest {
-  background-color: @color-white;
-}
-
-.contest__wrapper {
-  background-color: rgb(242, 242, 242);
-  box-shadow: -279px 0 0 -1px rgb(242, 242, 242),
-    279px 0 0 -1px rgb(242, 242, 242);
-}
-
-@media (min-width: 660px) {
-  .contest__wrapper {
-    background-color: @color-white;
-    box-shadow: none;
-  }
-}
-
 .contest__text {
   margin: 0;
+  margin-bottom: 34px;
 
   color: @color-main;
   font-size: 14px;
@@ -25,17 +9,31 @@
   text-align: center;
 }
 
-
-.contest__form-comment {
-  margin: 0;
-
-  color: @color-main;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 30px;
-  text-transform: uppercase;
+.contest__text span {
+  display: none;
 }
 
-.contest__form-comment span {
-  color: @color-fuchsia;
+@media (min-width: 660px) {
+  .contest__text {
+    margin: 0 auto;
+    margin-bottom: 71px;
+    width: 490px;
+
+    font-size: 18px;
+  }
+
+  .contest__text span {
+    display: block;
+  }
+}
+
+@media (min-width: 960px) {
+  .contest__text {
+    margin-bottom: 70px;
+    width: 780px;
+  }
+
+  .contest__text span {
+    display: inline;
+  }
 }

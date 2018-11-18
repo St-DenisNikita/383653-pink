@@ -1,24 +1,96 @@
+.panorama {
+  position: relative;
+}
+
 .panorama__image {
   margin: 0 auto;
-  max-width: 320px;
-}
-
-@media (min-width: 660px) {
-  .panorama__image {
-    max-width: 700px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .panorama__image {
-    max-width: 1200px;
-  }
 }
 
 .panorama__link {
   display: block;
+  position: relative;
+
+  height: 137px;
+  margin: 0 auto;
+  width: auto;
+
+  overflow: hidden;
 }
 
 .panorama__picture {
   display: block;
+  position: absolute;
+  left: calc(50% - 160px);
+
+  height: 137px;
+  margin: 0 auto;
+  width: auto; //временно
+}
+
+.panorama__comment {
+  position: relative;
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    right: 20px;
+    top: -137px;
+    z-index: 2;
+
+    padding: 6px 0;
+    width: 140px;
+
+    color: @color-white;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: @color-fuchsia;
+  }
+}
+
+@media (max-width: 320px) {
+  .panorama__picture {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 660px) {
+  .panorama {
+    margin-bottom: 50px;
+  }
+
+  .panorama__link {
+    height: 509px;
+  }
+
+  .panorama__picture {
+    height: 509px;
+    left: calc(50% - 350px);
+  }
+
+  .panorama__comment {
+    &::before {
+      top: -452px;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .panorama__link {
+    height: 506px;
+  }
+
+  .panorama__picture {
+    height: 506px;
+    left: calc(50% - 600px);
+  }
+
+  .panorama__comment {
+    &::before {
+      right: 10px;
+    }
+  }
 }

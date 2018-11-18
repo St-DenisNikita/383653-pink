@@ -1,0 +1,283 @@
+.form-photo__list {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid rgba(@color-main, 0.1);
+  margin: 0;
+  margin-bottom: 38px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 0;
+  padding-bottom: 34px;
+  padding-left: 54px;
+  padding-right: 58px;
+
+  list-style: none;
+}
+
+.form-photo__item {
+  position: relative;
+
+  width: 48px;
+
+  text-align: center;
+
+  &--fill {
+    margin-top: 2px;
+  }
+
+  &--contrast {
+    margin-top: 8px;
+  }
+}
+
+.form-photo__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.form-photo__wrapper {
+  display: none;
+  position: relative;
+
+  width: 240px;
+
+  &--crop {
+    left: -16px;
+
+    margin-top: 34px;
+  }
+
+  &--fill {
+    left: -96px;
+
+    margin-top: 32px;
+  }
+
+  &--contrast {
+    left: -176px;
+
+    margin-top: 42px;
+  }
+
+  &--active {
+    display: block;
+  }
+}
+
+.form-photo__scale {
+  position: relative;
+  height: 2px;
+  background-color: @color-main;
+}
+
+.form-photo__toogle {
+  position: absolute;
+  top: -6px;
+  left: 193px;
+  border-radius: 50%;
+  border: 2px solid @color-fuchsia;
+  background-color: @color-white;
+
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: @color-fuchsia;
+  }
+}
+
+@media (min-width: 660px) {
+  .form-photo {
+    width: 275px;
+  }
+
+  .form-photo__wrapper {
+    position: static;
+
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .form-photo__list {
+    flex-direction: column;
+
+    border-bottom: none;
+    margin: 0;
+    margin-bottom: 67px;
+    padding: 0;
+    padding-top: 9px;
+  }
+
+  .form-photo__item {
+    display: flex;
+
+    border-bottom: 1px solid rgba(@color-main, 0.1);
+    height: 46px;
+    margin-bottom: 26px;
+    width: 100%;
+
+    &--crop {
+      padding-left: 2px;
+    }
+
+    &--fill {
+      margin: 0;
+      margin-bottom: 23px;
+      padding-left: 3px;
+    }
+
+    &--contrast {
+      margin: 0;
+      padding-left: 8px;
+    }
+  }
+
+  .form-photo__label {
+    &--crop {
+      margin-right: 31px;
+    }
+
+    &--fill {
+      margin-right: 28px;
+      margin-top: 2px;
+    }
+
+    &--contrast {
+      margin-right: 31px;
+      margin-top: 3px;
+    }
+  }
+
+  .form-photo__label svg {
+    display: block;
+  }
+
+  .form-photo__scale {
+    margin-top: 10px;
+    width: 202px;
+  }
+
+  .form-photo__toogle {
+    &--crop {
+      left: 146px;
+    }
+
+    &--fill {
+      left: 25px;
+    }
+
+    &--contrast {
+      left: 96px;
+    }
+  }
+
+  .form-photo__buttons {
+    padding-left: 2px;
+    padding-right: 13px;
+  }
+}
+
+@media (min-width: 660px) and (max-width: 959px) {
+  .form-photo__label--crop svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .form-photo__label--fill svg {
+    width: 24px;
+    height: 22px;
+  }
+
+  .form-photo__label--contrast svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (min-width: 960px) {
+  .form-photo {
+    width: 410px;
+  }
+
+  .form-photo__list {
+    margin-bottom: 146px;
+    padding-top: 0;
+  }
+
+  .form-photo__item {
+    height: 59px;
+    margin-bottom: 13px;
+    width: 410px;
+
+    &--crop {
+      padding-left: 2px;
+    }
+
+    &--fill {
+      margin-bottom: 15px;
+      padding-left: 4px;
+    }
+
+    &--contrast {
+      height: 54px;
+      padding-left: 10px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form-photo__label {
+    margin-right: 46px;
+
+    &--fill {
+      margin-right: 44px;
+    }
+
+    &--contrast {
+      margin-right: 54px;
+    }
+  }
+
+  .form-photo__scale {
+    margin-top: 23px;
+    width: 288px;
+
+    &--contrast {
+      margin-top: 18px;
+    }
+  }
+
+  .form-photo__toogle {
+    &--crop {
+      left: 71px;
+    }
+
+    &--fill {
+      left: 247px;
+    }
+
+    &--contrast {
+      left: 160px;
+    }
+  }
+
+  .form-photo__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+    padding-right: 0;
+    padding-left: 5px;
+    width: 414px;
+  }
+}
