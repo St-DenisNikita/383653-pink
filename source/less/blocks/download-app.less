@@ -12,11 +12,12 @@
   background-repeat: no-repeat;
 }
 
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media only screen and (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .download-app {
     background-image: url("../img/iphone-hand-mobile@2x.png"),
       url("../img/bg-back-mobile@2x.jpg");
-    background-size: 258px, 700px auto;
+    background-size: 258px, 710px 462px;
+    background-position-y: 176px, -2.5px;
   }
 }
 
@@ -41,7 +42,7 @@
   text-align: center;
 }
 
-@media (min-width: 660px) {
+@media only screen and (min-width: 660px) {
   .download-app {
     margin-bottom: 50px;
     margin-top: -110px;
@@ -51,7 +52,7 @@
     background-position-x: 50%, center;
     background-position-y: 184px, top;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @media only screen and (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png"),
         url("../img/bg-back-tablet@2x.jpg");
       background-size: 700px, 1200px auto;
@@ -91,7 +92,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media only screen and (min-width: 960px) {
   .download-app {
     margin-top: 0;
     margin-bottom: 0;
@@ -101,7 +102,7 @@
     background-position-x: calc(50% + 71px), center;
     background-position-y: 209px, top;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @media only screen and (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png"),
         url("../img/bg-back-desktop@2x.jpg");
       background-size: 1050px, 2560px auto;
