@@ -37,6 +37,20 @@
   opacity: 0;
 }
 
+.form-photo__icon-svg {
+  fill: @color-main;
+  fill-opacity: 0.3;
+}
+
+.form-photo__label:hover .form-photo__icon-svg {
+  fill-opacity: 0.5;
+}
+
+.form-photo__input:checked + .form-photo__label .form-photo__icon-svg {
+  fill: @color-fuchsia;
+  fill-opacity: 1;
+}
+
 .form-photo__wrapper {
   display: none;
   position: relative;
@@ -157,6 +171,11 @@
 
   .form-photo__label svg {
     display: block;
+  }
+
+  .form-photo__icon-svg {
+    fill: @color-fuchsia;
+    fill-opacity: 1;
   }
 
   .form-photo__scale {

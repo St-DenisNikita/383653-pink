@@ -35,25 +35,41 @@
   .reviews__button {
     display: block;
     position: absolute;
-    top: 56.9%;
+    top: 58.3%;
 
-    border: none;
-    height: 41px;
-    width: 22px;
+    border: 2px solid rgba(40, 54, 69, 0.3);
+    height: 30px;
+    width: 30px;
 
     background-color: rgba(255, 255, 255, 0);
     background-repeat: no-repeat;
+    transform: rotate(45deg);
 
     cursor: pointer;
 
+    &:hover {
+      border-color: rgba(40, 54, 69, 0.6);
+    }
+
+    &:active {
+      border-color: rgba(40, 54, 69, 0.1);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
     &--prev {
-      background-image: url("../img/icon-review-arrow-left.svg");
-      left: 0;
+      border-top: none;
+      border-right: none;
+      left: 5px;
     }
 
     &--next {
-      background-image: url("../img/icon-review-arrow-right.svg");
-      right: 0;
+      border-bottom: none;
+      border-left: none;
+      right: 6px;
+      top: 58.5%;
     }
   }
 }
