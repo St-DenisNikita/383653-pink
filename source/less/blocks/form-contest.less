@@ -38,6 +38,7 @@
 }
 
 .form-contest__legend {
+  width: 100%; //mobile
   color: @color-fuchsia;
   font-size: 14px;
   font-weight: 400;
@@ -374,14 +375,16 @@
 
     &--review {
       padding-bottom: 48px;
-      padding-left: 58px;
-      padding-right: 58px;
       padding-top: 21px;
     }
   }
 
   .form-contest__legend {
     padding: 0 30px;
+    width: auto;
+    margin: 0 auto;
+
+    background-color: rgba(255, 255, 255, 0);
 
     &--radio {
       padding: 0 25px;
@@ -490,8 +493,11 @@
 
   .form-contest__textarea {
     min-height: 193px;
+    margin-left: 58px;
+    margin-right: 58px;
     margin-top: 10px;
     min-width: 500px;
+
   }
 }
 
@@ -553,8 +559,7 @@
   .form-contest__legend {
     &--radio {
       padding: 0;
-      width: 371px;
-      transform: translate(-1px);
+      transform: translate(-2px);
     }
   }
 
