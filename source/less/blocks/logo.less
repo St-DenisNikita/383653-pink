@@ -2,7 +2,9 @@
   display: block;
 
   &--header {
-    margin-right: auto;
+    position: absolute;
+    left: -50px;
+    top: 5px;
     height: auto;
     width: auto;
   }
@@ -50,6 +52,10 @@
 
 @media only screen and (min-width: 660px) {
   .logo {
+    &--header {
+      position: static;
+    }
+
     &--footer {
       margin: 0;
       margin-top: -3px;
@@ -69,6 +75,10 @@
 
 @media only screen and (min-width: 960px) {
   .logo {
+    &--header {
+      margin-right: auto;
+    }
+
     &--footer {
       margin-top: 0;
     }
@@ -91,6 +101,50 @@
 
     &--desktop {
       display: block;
+    }
+  }
+}
+
+//стили для лого
+.logo-white {
+  &--part-desktop,
+  &--part-tablet {
+    display: none;
+  }
+}
+
+.logo-blue {
+  &--part-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  .logo-white {
+    &--part-tablet {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .logo-white {
+    &--part-tablet {
+      display: none;
+    }
+
+    &--part-desktop {
+      display: block;
+    }
+  }
+
+  .logo-blue {
+    &--part-desktop {
+      display: block;
+    }
+
+    &--part-mobile {
+      display: none;
     }
   }
 }
