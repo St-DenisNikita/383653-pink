@@ -15,29 +15,14 @@
 
 .social-links__link {
   display: block;
+  position: relative;
 
   border: 3px solid rgba(@color-main, 0.1);
   height: 45px;
   width: 45px;
 
   background-clip: content-box;
-  background-repeat: no-repeat;
   border-radius: 50%;
-
-  &--twitter {
-    background-image: url("../img/icon-twitter.svg");
-    background-position: left calc(50% - 1px) top 50%;
-  }
-
-  &--facebook {
-    background-image: url("../img/icon-facebook.svg");
-    background-position: left calc(50% - 1px) top calc(50% - 1px);
-  }
-
-  &--youtube {
-    background-image: url("../img/icon-youtube.svg");
-    background-position: left calc(50% + 1px) top calc(50% - 1px);
-  }
 
   &:hover {
     border-color: @color-main;
@@ -46,6 +31,30 @@
   &:active {
     opacity: 0.3;
     border-color: rgba(@color-main, 0.3);
+  }
+}
+
+.social-links__icon {
+  position: absolute;
+
+  transform: translate(-50%, -50%);
+
+  fill: @color-fuchsia;
+
+
+  &--twitter {
+    left: calc(50% + 1px);
+    top: calc(50% + 1px);
+  }
+
+  &--facebook {
+    left: calc(50% - 1px);
+    top: calc(50% - 1px);
+  }
+
+  &--youtube {
+    left: calc(50% + 2px);
+    top: calc(50% - 1px);
   }
 }
 
