@@ -1,68 +1,53 @@
 .stores {
   .ulstyle();
 
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: bottom;
 
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding: 0 37px;
-}
-
-@media (min-width: 660px) {
-  .stores {
-    margin: 0 auto;
-    margin-bottom: 34px;
-    width: 205px;
-  }
-}
-
-@media (min-width: 960px) {
-  .stores {
-    margin-bottom: 53px;
-  }
 }
 
 .stores__link {
   display: block;
 
-  height: 56px;
-  width: 53px;
-
   color: @color-white;
   text-decoration: none;
 
-  background-position: center;
-  background-repeat: no-repeat;
-
-  &--itunes {
-    height: 57px;
-
-    background-image: url("../img/logo-apple.svg");
-    background-position: left 1px top -2px;
-  }
-
-  @media (min-width: 660px) {
-    &--itunes {
-      background-position: left -1px top -2px;
-    }
-  }
-
   &--googleplay {
-    width: 52px;
-
-    background-image: url("../img/logo-android.svg");
-    background-position: left 4px top 7px;
-  }
-
-  @media (min-width: 660px) {
-    &--googleplay {
-      background-position: left 5px top 5px;
-    }
+    margin-top: 5px;
+    margin-left: -2px;
   }
 
   &--windows {
-    background-image: url("../img/logo-microsoft.svg");
-    background-position: left 8px top 11px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  .stores {
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 205px;
+  }
+
+  .stores__link {
+    &--googleplay {
+      margin-top: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .stores {
+    margin-bottom: 51px;
+  }
+
+  .stores__link {
+    &--googleplay {
+      margin-left: -3px;
+      margin-top: 5px;
+    }
   }
 }

@@ -1,10 +1,150 @@
 .logo {
   display: block;
-  margin-right: auto;
-  height: 24px;
-  width: auto;
+
+  &--header {
+    position: absolute;
+    left: -50px;
+    top: 5px;
+    height: auto;
+    width: auto;
+  }
+
+  &--footer {
+    margin: 0 auto;
+    width: 146px;
+  }
 }
 
-.logo__image {
-  display: block;
+.logo__svg {
+  fill: @color-white;
+
+  &:hover {
+    fill: @color-fuchsia;
+  }
+
+  &:active {
+    fill: @color-white;
+    fill-opacity: 0.3;
+  }
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+}
+
+.pink__svg {
+  fill: @color-main;
+
+  &:hover {
+    fill: @color-fuchsia;
+  }
+
+  &:active {
+    fill: @color-main;
+    fill-opacity: 0.3;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  .logo {
+    &--header {
+      position: static;
+    }
+
+    &--footer {
+      margin: 0;
+      margin-top: -3px;
+    }
+  }
+
+  .logo__svg {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .logo {
+    &--header {
+      margin-right: auto;
+    }
+
+    &--footer {
+      margin-top: 0;
+    }
+  }
+
+  .logo__svg {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+
+  .pink__svg {
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+}
+
+//стили для лого
+.logo-white {
+  &--part-desktop,
+  &--part-tablet {
+    display: none;
+  }
+}
+
+.logo-blue {
+  &--part-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  .logo-white {
+    &--part-tablet {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .logo-white {
+    &--part-tablet {
+      display: none;
+    }
+
+    &--part-desktop {
+      display: block;
+    }
+  }
+
+  .logo-blue {
+    &--part-desktop {
+      display: block;
+    }
+
+    &--part-mobile {
+      display: none;
+    }
+  }
 }
