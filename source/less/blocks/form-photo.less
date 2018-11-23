@@ -100,7 +100,6 @@
 
   cursor: pointer;
 
-  &:hover,
   &:active {
     background-color: @color-fuchsia;
   }
@@ -171,6 +170,11 @@
 
   .form-photo__label svg {
     display: block;
+  }
+
+  .form-photo__label:hover .form-photo__icon-svg {
+    fill: @color-main;
+    fill-opacity: 0.5;
   }
 
   .form-photo__icon-svg {
