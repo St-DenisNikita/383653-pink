@@ -2,6 +2,8 @@
   display: none;
   position: absolute;
   z-index: 2000;
+  left: 50%;
+  transform: translateX(-50%);
 
   box-sizing: border-box;
   padding: 0 20px;
@@ -14,7 +16,12 @@
   box-shadow: 0 7px 15px 7px rgba(@color-black, 0.15);
   text-align: center;
 
+  &--rejected {
+    top: 1425px;
+  }
+
   &--sent {
+    top: 1900px;
     background-image: linear-gradient(to top, rgb(242, 242, 242) 161px, rgb(255, 255, 255) 161px);
   }
 }
@@ -52,6 +59,14 @@
     padding-right: 70px;
     padding-top: 37px;
     width: 460px;
+
+    &--rejected {
+      top: 1164px;
+    }
+
+    &--sent {
+      top: 1638px;
+    }
   }
 
   .popup__title {
@@ -79,10 +94,15 @@
     border-radius: 5px;
 
     &--rejected {
+      top: 817px;
       padding-left: 210px;
       padding-right: 210px;
 
       background-image: linear-gradient(to top, rgb(242, 242, 242) 160px, rgb(255, 255, 255) 160px);
+    }
+
+    &--sent {
+      top: 1273px;
     }
   }
 
