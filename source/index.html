@@ -126,7 +126,7 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav">
         <a class="logo logo--header" href="#">
           <svg role="img" class="logo__svg" width="146.3px" height="40.375px">
             <use xlink:href="#logo-pink-white"></use>
@@ -267,16 +267,16 @@
             <article class="review visually-hidden">
               <h1 class="review__title visually-hidden">Отзыв пользователя о приложении Pink</h1>
               <blockquote class="review__item">
-                <cite class="review__autor-name">Николай Петров</cite>
-                <aside class="review__autor-additionally">25 лет, водитель трамвая</aside>
+                <cite class="review__autor-name">Ольга О</cite>
+                <aside class="review__autor-additionally">39 лет, финансовый директор</aside>
                 <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </blockquote>
             </article>
             <article class="review visually-hidden">
               <h1 class="review__title visually-hidden">Отзыв пользователя о приложении Pink</h1>
               <blockquote class="review__item">
-                <cite class="review__autor-name">Николай Петров</cite>
-                <aside class="review__autor-additionally">25 лет, водитель трамвая</aside>
+                <cite class="review__autor-name">Анастасия Кылынч</cite>
+                <aside class="review__autor-additionally">28 лет, руководитель службы подбора персонала</aside>
                 <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </blockquote>
             </article>
@@ -292,7 +292,7 @@
       </section>
       <section class="price">
         <h2 class="price__title visually-hidden">Цены</h2>
-        <div class="container price-wrap">
+        <div class="container price__wrap">
           <div class="price__slider">
             <table class="price__briefcases briefcase">
               <tr>
@@ -382,15 +382,15 @@
         </div>
       </section>
       <section class="map">
-        <iframe class="map-js" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.32089461599762!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1541430861421" width="320" height="645"></iframe>
-        <div class="map-inner">
+        <iframe class="map__js" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.32089461599762!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1541430861421" width="320" height="645"></iframe>
+        <div class="map__inner">
           <picture>
             <source type="image/webp" media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
             <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-            <img class="map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="645" alt="">
+            <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="645" alt="">
           </picture>
         </div>
       </section>
@@ -403,27 +403,27 @@
           </svg>
         </a>
         <div class="page-footer-social social">
-          <ul class="social-links">
-            <li class="social-links__item">
-              <a class="social-links__link social-links__link--twitter" href="">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="">
                 <span class="visually-hidden">Twitter</span>
-                <svg class="social-links__icon social-links__icon--twitter" fill="#D22856" width="17.5px" height="14.663px">
+                <svg class="social__icon social__icon--twitter" width="17.5px" height="14.663px">
                   <use xlink:href="#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-links__item">
-              <a class="social-links__link social-links__link--facebook" href="">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="">
                 <span class="visually-hidden">Facebook</span>
-                <svg class="social-links__icon social-links__icon--facebook" fill="#D22856" width="8.673px" height="18.944px">
+                <svg class="social__icon social__icon--facebook" fill="#D22856" width="8.673px" height="18.944px">
                   <use xlink:href="#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-links__item">
-              <a class="social-links__link social-links__link--youtube" href="">
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="">
                 <span class="visually-hidden">Youtube</span>
-                <svg class="social-links__icon social-links__icon--youtube" fill="#D22856" width="14.64px" height="13.96px">
+                <svg class="social__icon social__icon--youtube" width="14.64px" height="13.96px">
                   <use xlink:href="#icon-youtube"></use>
                 </svg>
               </a>
