@@ -1,0 +1,27 @@
+.pink-logo {
+  &--part-desktop,
+  &--part-tablet {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  .pink-logo {
+    &--part-tablet {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .pink-logo {
+    &--part-tablet,
+    &--part-mobile {
+      display: none;
+    }
+
+    &--part-desktop {
+      display: block;
+    }
+  }
+}
