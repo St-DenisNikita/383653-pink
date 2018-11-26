@@ -1,38 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <style>
-  HTML {
-    background-repeat: no-repeat;
-    background-position:  50% 0;
-    /* По умолчанию мобильный макет */
-    background-image: url( "img/preview/pink-form-mobile.jpg" );
-  }
-  /* Планшет */
-  @media ( min-width: 660px ) {
-    HTML {
-      /* Планшетный макет */
-      background-image: url( "img/preview/pink-form-tablet.jpg" );
-    }
-  }
-  /* Десктоп */
-  @media ( min-width: 960px ) {
-    HTML {
-      /* Десктопный макет */
-      background-image: url( "img/preview/pink-form-desktop.jpg" );
-    }
-  }
-
-  BODY {
-    opacity: .5;
-  }
-</style>
-<link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
-<script src="../node_modules/pixel-glass/script.js"></script>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
@@ -139,7 +113,7 @@
       <section class="contest container">
         <p class="contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           <span>Пожалуйста, заполните форму ниже:</span></p>
-        <form class="contest__form form-contest" action="https://echo.htmlacademy.ru" method="get">
+        <form class="contest__form form-contest" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-contest__wrapper form-contest__wrapper--name">
             <fieldset class="form-contest__fieldset form-contest__fieldset--name">
               <legend class="form-contest__legend visually-hidden">ФИО</legend>
